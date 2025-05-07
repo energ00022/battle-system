@@ -1,0 +1,24 @@
+[3.452s] Invoking command in '/home/willi/battle_ws/build/scan_platform': PYTHONPATH=/home/willi/battle_ws/build/scan_platform/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/willi/battle_ws/install/scan_platform/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/willi/battle_ws/build/scan_platform/build --no-deps symlink_data
+[4.219s] running develop
+[5.209s] running egg_info
+[5.209s] creating scan_platform.egg-info
+[5.269s] writing scan_platform.egg-info/PKG-INFO
+[5.270s] writing dependency_links to scan_platform.egg-info/dependency_links.txt
+[5.271s] writing entry points to scan_platform.egg-info/entry_points.txt
+[5.272s] writing requirements to scan_platform.egg-info/requires.txt
+[5.273s] writing top-level names to scan_platform.egg-info/top_level.txt
+[5.273s] writing manifest file 'scan_platform.egg-info/SOURCES.txt'
+[5.421s] reading manifest file 'scan_platform.egg-info/SOURCES.txt'
+[5.421s] writing manifest file 'scan_platform.egg-info/SOURCES.txt'
+[5.481s] running build_ext
+[5.483s] Creating /home/willi/battle_ws/install/scan_platform/lib/python3.10/site-packages/scan-platform.egg-link (link to .)
+[5.483s] Installing scanner_node script to /home/willi/battle_ws/install/scan_platform/lib/scan_platform
+[5.485s] 
+[5.485s] Installed /home/willi/battle_ws/build/scan_platform
+[5.486s] running symlink_data
+[5.489s] creating /home/willi/battle_ws/install/scan_platform/share/ament_index
+[5.489s] creating /home/willi/battle_ws/install/scan_platform/share/ament_index/resource_index
+[5.490s] creating /home/willi/battle_ws/install/scan_platform/share/ament_index/resource_index/packages
+[5.490s] symbolically linking /home/willi/battle_ws/build/scan_platform/resource/scan_platform -> /home/willi/battle_ws/install/scan_platform/share/ament_index/resource_index/packages
+[5.490s] symbolically linking /home/willi/battle_ws/build/scan_platform/package.xml -> /home/willi/battle_ws/install/scan_platform/share/scan_platform
+[5.652s] Invoked command in '/home/willi/battle_ws/build/scan_platform' returned '0': PYTHONPATH=/home/willi/battle_ws/build/scan_platform/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/willi/battle_ws/install/scan_platform/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/willi/battle_ws/build/scan_platform/build --no-deps symlink_data

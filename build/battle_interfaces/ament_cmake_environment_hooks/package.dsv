@@ -1,0 +1,4 @@
+source;share/battle_interfaces/local_setup.bash
+source;share/battle_interfaces/local_setup.dsv
+source;share/battle_interfaces/local_setup.sh
+source;share/battle_interfaces/local_setup.zsh

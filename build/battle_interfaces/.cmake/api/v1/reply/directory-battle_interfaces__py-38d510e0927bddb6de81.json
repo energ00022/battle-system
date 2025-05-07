@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "battle_interfaces__py",
+		"source" : "/home/willi/battle_ws/build/battle_interfaces/battle_interfaces__py"
+	}
+}

@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating fire_tracker.egg-info
+writing fire_tracker.egg-info/PKG-INFO
+writing dependency_links to fire_tracker.egg-info/dependency_links.txt
+writing entry points to fire_tracker.egg-info/entry_points.txt
+writing requirements to fire_tracker.egg-info/requires.txt
+writing top-level names to fire_tracker.egg-info/top_level.txt
+writing manifest file 'fire_tracker.egg-info/SOURCES.txt'
+reading manifest file 'fire_tracker.egg-info/SOURCES.txt'
+writing manifest file 'fire_tracker.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/willi/battle_ws/install/fire_tracker/lib/python3.10/site-packages/fire-tracker.egg-link (link to .)
+Installing tracker_node script to /home/willi/battle_ws/install/fire_tracker/lib/fire_tracker
+Installing tracker_node_fp3 script to /home/willi/battle_ws/install/fire_tracker/lib/fire_tracker
+
+Installed /home/willi/battle_ws/build/fire_tracker
+running symlink_data
+creating /home/willi/battle_ws/install/fire_tracker/share/ament_index
+creating /home/willi/battle_ws/install/fire_tracker/share/ament_index/resource_index
+creating /home/willi/battle_ws/install/fire_tracker/share/ament_index/resource_index/packages
+symbolically linking /home/willi/battle_ws/build/fire_tracker/resource/fire_tracker -> /home/willi/battle_ws/install/fire_tracker/share/ament_index/resource_index/packages
+symbolically linking /home/willi/battle_ws/build/fire_tracker/package.xml -> /home/willi/battle_ws/install/fire_tracker/share/fire_tracker

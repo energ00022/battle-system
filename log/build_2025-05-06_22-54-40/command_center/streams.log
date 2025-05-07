@@ -1,0 +1,39 @@
+[7.150s] Invoking command in '/home/willi/battle_ws/build/command_center': PYTHONPATH=/home/willi/battle_ws/build/command_center/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/willi/battle_ws/install/command_center/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/willi/battle_ws/build/command_center/build --no-deps symlink_data
+[8.701s] running develop
+[10.364s] running egg_info
+[10.365s] creating command_center.egg-info
+[10.423s] writing command_center.egg-info/PKG-INFO
+[10.426s] writing dependency_links to command_center.egg-info/dependency_links.txt
+[10.428s] writing entry points to command_center.egg-info/entry_points.txt
+[10.430s] writing requirements to command_center.egg-info/requires.txt
+[10.431s] writing top-level names to command_center.egg-info/top_level.txt
+[10.435s] writing manifest file 'command_center.egg-info/SOURCES.txt'
+[10.556s] reading manifest file 'command_center.egg-info/SOURCES.txt'
+[10.566s] writing manifest file 'command_center.egg-info/SOURCES.txt'
+[10.727s] running build_ext
+[10.727s] Creating /home/willi/battle_ws/install/command_center/lib/python3.10/site-packages/command-center.egg-link (link to .)
+[10.734s] Installing commander_node script to /home/willi/battle_ws/install/command_center/lib/command_center
+[10.737s] 
+[10.737s] Installed /home/willi/battle_ws/build/command_center
+[10.738s] running symlink_data
+[10.738s] creating /home/willi/battle_ws/install/command_center/share/ament_index
+[10.738s] creating /home/willi/battle_ws/install/command_center/share/ament_index/resource_index
+[10.739s] creating /home/willi/battle_ws/install/command_center/share/ament_index/resource_index/packages
+[10.739s] symbolically linking /home/willi/battle_ws/build/command_center/resource/command_center -> /home/willi/battle_ws/install/command_center/share/ament_index/resource_index/packages
+[10.739s] symbolically linking /home/willi/battle_ws/build/command_center/package.xml -> /home/willi/battle_ws/install/command_center/share/command_center
+[11.371s] running develop
+[12.217s] running egg_info
+[12.269s] writing command_center.egg-info/PKG-INFO
+[12.269s] writing dependency_links to command_center.egg-info/dependency_links.txt
+[12.269s] writing entry points to command_center.egg-info/entry_points.txt
+[12.270s] writing requirements to command_center.egg-info/requires.txt
+[12.270s] writing top-level names to command_center.egg-info/top_level.txt
+[12.372s] reading manifest file 'command_center.egg-info/SOURCES.txt'
+[12.386s] writing manifest file 'command_center.egg-info/SOURCES.txt'
+[12.437s] running build_ext
+[12.439s] Creating /home/willi/battle_ws/install/command_center/lib/python3.10/site-packages/command-center.egg-link (link to .)
+[12.439s] Installing commander_node script to /home/willi/battle_ws/install/command_center/lib/command_center
+[12.441s] 
+[12.441s] Installed /home/willi/battle_ws/build/command_center
+[12.443s] running symlink_data
+[12.914s] Invoked command in '/home/willi/battle_ws/build/command_center' returned '0': PYTHONPATH=/home/willi/battle_ws/build/command_center/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/willi/battle_ws/install/command_center/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/willi/battle_ws/build/command_center/build --no-deps symlink_data

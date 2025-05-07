@@ -1,0 +1,2 @@
+[console_scripts]
+scanner_node = scan_platform.scan_node:main

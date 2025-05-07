@@ -1,0 +1,803 @@
+[0.000000] (-) TimerEvent: {}
+[0.003239] (battle_interfaces) JobQueued: {'identifier': 'battle_interfaces', 'dependencies': OrderedDict()}
+[0.003343] (command_center) JobQueued: {'identifier': 'command_center', 'dependencies': OrderedDict([('battle_interfaces', '/home/willi/battle_ws/install/battle_interfaces')])}
+[0.003400] (fire_platform) JobQueued: {'identifier': 'fire_platform', 'dependencies': OrderedDict([('battle_interfaces', '/home/willi/battle_ws/install/battle_interfaces')])}
+[0.003451] (fire_platform_3) JobQueued: {'identifier': 'fire_platform_3', 'dependencies': OrderedDict([('battle_interfaces', '/home/willi/battle_ws/install/battle_interfaces')])}
+[0.003500] (fire_tracker) JobQueued: {'identifier': 'fire_tracker', 'dependencies': OrderedDict([('battle_interfaces', '/home/willi/battle_ws/install/battle_interfaces')])}
+[0.003549] (scan_platform) JobQueued: {'identifier': 'scan_platform', 'dependencies': OrderedDict([('battle_interfaces', '/home/willi/battle_ws/install/battle_interfaces')])}
+[0.003599] (battle_interfaces) JobStarted: {'identifier': 'battle_interfaces'}
+[0.023322] (battle_interfaces) JobProgress: {'identifier': 'battle_interfaces', 'progress': 'cmake'}
+[0.024452] (battle_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/willi/battle_ws/src/battle_interfaces', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/willi/battle_ws/install/battle_interfaces'], 'cwd': '/home/willi/battle_ws/build/battle_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'willi'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/willi/battle_ws/install/battle_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/willi'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/willi/battle_ws'), ('TERM_PROGRAM_VERSION', '1.99.3'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1895'), ('BUNDLED_DEBUGPY_PATH', '/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/willi/battle_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'willi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'willi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/willi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/willi-Lenovo-Z580:@/tmp/.ICE-unix/1655,unix/willi-Lenovo-Z580:/tmp/.ICE-unix/1655'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/79642a07_7e7c_4be8_a4ff_6849159529dd'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-297ebcadc624d894.txt'), ('LANG', 'uk_UA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7c7c68222e.sock'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/willi/battle_ws/install/fire_tracker:/home/willi/battle_ws/install/battle_interfaces:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/willi/battle_ws/build/battle_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib::/opt/ros/humble/lib:/opt/ros/humble/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/willi/battle_ws/build/fire_tracker:/home/willi/battle_ws/install/fire_tracker/lib/python3.10/site-packages:/home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/willi/battle_ws/install/battle_interfaces:/home/willi/battle_ws/install/fire_tracker:/opt/ros/humble')]), 'shell': False}
+[0.102031] (-) TimerEvent: {}
+[0.181434] (battle_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.202710] (-) TimerEvent: {}
+[0.303174] (-) TimerEvent: {}
+[0.320009] (battle_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.337381] (battle_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.404132] (-) TimerEvent: {}
+[0.504833] (-) TimerEvent: {}
+[0.507897] (battle_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.533607] (battle_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.534473] (battle_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.535359] (battle_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.543786] (battle_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.605067] (-) TimerEvent: {}
+[0.705538] (-) TimerEvent: {}
+[0.790152] (battle_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.805673] (-) TimerEvent: {}
+[0.818620] (battle_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.818981] (battle_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.822102] (battle_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.823301] (battle_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.905826] (-) TimerEvent: {}
+[1.006407] (-) TimerEvent: {}
+[1.106918] (-) TimerEvent: {}
+[1.207317] (-) TimerEvent: {}
+[1.308367] (-) TimerEvent: {}
+[1.409538] (-) TimerEvent: {}
+[1.509924] (-) TimerEvent: {}
+[1.610269] (-) TimerEvent: {}
+[1.710612] (-) TimerEvent: {}
+[1.811008] (-) TimerEvent: {}
+[1.911363] (-) TimerEvent: {}
+[2.011696] (-) TimerEvent: {}
+[2.112086] (-) TimerEvent: {}
+[2.212447] (-) TimerEvent: {}
+[2.220563] (battle_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.312614] (-) TimerEvent: {}
+[2.327612] (battle_interfaces) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.364269] (battle_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.368537] (battle_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.377435] (battle_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.412734] (-) TimerEvent: {}
+[2.439211] (battle_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.492029] (battle_interfaces) StdoutLine: {'line': b'-- Found std_msgs: 4.8.0 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[2.512853] (-) TimerEvent: {}
+[2.613205] (-) TimerEvent: {}
+[2.713598] (-) TimerEvent: {}
+[2.814008] (-) TimerEvent: {}
+[2.914498] (-) TimerEvent: {}
+[3.015006] (-) TimerEvent: {}
+[3.073335] (battle_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.115130] (-) TimerEvent: {}
+[3.215495] (-) TimerEvent: {}
+[3.315843] (-) TimerEvent: {}
+[3.416399] (-) TimerEvent: {}
+[3.504922] (battle_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.516556] (-) TimerEvent: {}
+[3.617050] (-) TimerEvent: {}
+[3.717421] (-) TimerEvent: {}
+[3.817815] (-) TimerEvent: {}
+[3.918829] (-) TimerEvent: {}
+[4.019179] (-) TimerEvent: {}
+[4.122020] (-) TimerEvent: {}
+[4.144010] (battle_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.187901] (battle_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[4.190112] (battle_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.222134] (-) TimerEvent: {}
+[4.228780] (battle_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[4.229144] (battle_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.229271] (battle_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.229379] (battle_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[4.269981] (battle_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[4.322248] (-) TimerEvent: {}
+[4.367700] (battle_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.394759] (battle_interfaces) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[4.399976] (battle_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.402586] (battle_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.408218] (battle_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.422384] (-) TimerEvent: {}
+[4.477552] (battle_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[4.496155] (battle_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/willi/battle_ws/build/battle_interfaces\n'}
+[4.505065] (battle_interfaces) CommandEnded: {'returncode': 0}
+[4.506194] (battle_interfaces) JobProgress: {'identifier': 'battle_interfaces', 'progress': 'build'}
+[4.507166] (battle_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/willi/battle_ws/build/battle_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/willi/battle_ws/build/battle_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'willi'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/willi/battle_ws/install/battle_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/willi'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/willi/battle_ws'), ('TERM_PROGRAM_VERSION', '1.99.3'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1895'), ('BUNDLED_DEBUGPY_PATH', '/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/willi/battle_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'willi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'willi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/willi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/willi-Lenovo-Z580:@/tmp/.ICE-unix/1655,unix/willi-Lenovo-Z580:/tmp/.ICE-unix/1655'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/79642a07_7e7c_4be8_a4ff_6849159529dd'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-297ebcadc624d894.txt'), ('LANG', 'uk_UA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7c7c68222e.sock'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/willi/battle_ws/install/fire_tracker:/home/willi/battle_ws/install/battle_interfaces:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/willi/battle_ws/build/battle_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib::/opt/ros/humble/lib:/opt/ros/humble/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/willi/battle_ws/build/fire_tracker:/home/willi/battle_ws/install/fire_tracker/lib/python3.10/site-packages:/home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/willi/battle_ws/install/battle_interfaces:/home/willi/battle_ws/install/fire_tracker:/opt/ros/humble')]), 'shell': False}
+[4.522512] (-) TimerEvent: {}
+[4.577764] (battle_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.599487] (battle_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.626585] (-) TimerEvent: {}
+[4.641094] (battle_interfaces) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_symlink_battle_interfaces\n'}
+[4.728006] (-) TimerEvent: {}
+[4.832022] (-) TimerEvent: {}
+[4.932412] (-) TimerEvent: {}
+[5.032799] (-) TimerEvent: {}
+[5.136169] (-) TimerEvent: {}
+[5.236562] (-) TimerEvent: {}
+[5.337423] (-) TimerEvent: {}
+[5.437823] (-) TimerEvent: {}
+[5.538199] (-) TimerEvent: {}
+[5.593750] (battle_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[5.595315] (battle_interfaces) StdoutLine: {'line': b'creating battle_interfaces.egg-info\n'}
+[5.626996] (battle_interfaces) StdoutLine: {'line': b'writing battle_interfaces.egg-info/PKG-INFO\n'}
+[5.627316] (battle_interfaces) StdoutLine: {'line': b'writing dependency_links to battle_interfaces.egg-info/dependency_links.txt\n'}
+[5.627542] (battle_interfaces) StdoutLine: {'line': b'writing top-level names to battle_interfaces.egg-info/top_level.txt\n'}
+[5.627732] (battle_interfaces) StdoutLine: {'line': b"writing manifest file 'battle_interfaces.egg-info/SOURCES.txt'\n"}
+[5.638305] (-) TimerEvent: {}
+[5.721663] (battle_interfaces) StdoutLine: {'line': b"reading manifest file 'battle_interfaces.egg-info/SOURCES.txt'\n"}
+[5.722535] (battle_interfaces) StdoutLine: {'line': b"writing manifest file 'battle_interfaces.egg-info/SOURCES.txt'\n"}
+[5.738435] (-) TimerEvent: {}
+[5.840251] (-) TimerEvent: {}
+[5.856696] (battle_interfaces) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_battle_interfaces_egg\n'}
+[5.940384] (-) TimerEvent: {}
+[5.961166] (battle_interfaces) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/battle_interfaces__rosidl_generator_c.dir/rosidl_generator_c/battle_interfaces/msg/detail/target__functions.c.o\x1b[0m\n'}
+[5.980006] (battle_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/battle_interfaces__rosidl_generator_c.dir/rosidl_generator_c/battle_interfaces/msg/detail/target_array__functions.c.o\x1b[0m\n'}
+[5.995963] (battle_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/battle_interfaces__rosidl_generator_c.dir/rosidl_generator_c/battle_interfaces/msg/detail/aim_vector__functions.c.o\x1b[0m\n'}
+[6.042115] (-) TimerEvent: {}
+[6.098167] (battle_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/battle_interfaces__rosidl_generator_c.dir/rosidl_generator_c/battle_interfaces/srv/detail/pointing__functions.c.o\x1b[0m\n'}
+[6.130979] (battle_interfaces) StdoutLine: {'line': b'[ 10%] Built target battle_interfaces__cpp\n'}
+[6.143122] (-) TimerEvent: {}
+[6.152023] (battle_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.156127] (battle_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[6.156487] (battle_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.243029] (battle_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C shared library libbattle_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[6.243365] (-) TimerEvent: {}
+[6.347501] (-) TimerEvent: {}
+[6.387177] (battle_interfaces) StdoutLine: {'line': b'[ 18%] Built target battle_interfaces__rosidl_generator_c\n'}
+[6.412014] (battle_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.447611] (-) TimerEvent: {}
+[6.548463] (-) TimerEvent: {}
+[6.650555] (-) TimerEvent: {}
+[6.750925] (-) TimerEvent: {}
+[6.853001] (-) TimerEvent: {}
+[6.953378] (-) TimerEvent: {}
+[7.053755] (-) TimerEvent: {}
+[7.154150] (-) TimerEvent: {}
+[7.254507] (-) TimerEvent: {}
+[7.355999] (-) TimerEvent: {}
+[7.456656] (-) TimerEvent: {}
+[7.557205] (-) TimerEvent: {}
+[7.583461] (battle_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/battle_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/battle_interfaces/msg/target__type_support.cpp.o\x1b[0m\n'}
+[7.624102] (battle_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/battle_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/battle_interfaces/msg/detail/target__type_support.cpp.o\x1b[0m\n'}
+[7.657324] (-) TimerEvent: {}
+[7.760455] (-) TimerEvent: {}
+[7.862426] (-) TimerEvent: {}
+[7.962859] (-) TimerEvent: {}
+[8.063321] (-) TimerEvent: {}
+[8.129071] (battle_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/battle_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/battle_interfaces/msg/detail/dds_fastrtps/target__type_support.cpp.o\x1b[0m\n'}
+[8.143048] (battle_interfaces) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/battle_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/battle_interfaces/msg/detail/target__type_support_c.cpp.o\x1b[0m\n'}
+[8.163450] (-) TimerEvent: {}
+[8.266733] (-) TimerEvent: {}
+[8.370742] (-) TimerEvent: {}
+[8.471398] (-) TimerEvent: {}
+[8.573309] (-) TimerEvent: {}
+[8.673927] (-) TimerEvent: {}
+[8.688952] (battle_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/battle_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/battle_interfaces/msg/target_array__type_support.cpp.o\x1b[0m\n'}
+[8.777023] (-) TimerEvent: {}
+[8.880030] (-) TimerEvent: {}
+[8.989044] (-) TimerEvent: {}
+[9.090549] (-) TimerEvent: {}
+[9.195028] (-) TimerEvent: {}
+[9.299031] (-) TimerEvent: {}
+[9.404030] (-) TimerEvent: {}
+[9.504577] (-) TimerEvent: {}
+[9.528139] (battle_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/battle_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/battle_interfaces/msg/detail/target_array__type_support_c.cpp.o\x1b[0m\n'}
+[9.604717] (-) TimerEvent: {}
+[9.708445] (-) TimerEvent: {}
+[9.810335] (-) TimerEvent: {}
+[9.880197] (battle_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/battle_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/battle_interfaces/msg/detail/target_array__type_support.cpp.o\x1b[0m\n'}
+[9.903207] (battle_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/battle_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/battle_interfaces/msg/aim_vector__type_support.cpp.o\x1b[0m\n'}
+[9.910461] (-) TimerEvent: {}
+[10.013023] (-) TimerEvent: {}
+[10.113989] (-) TimerEvent: {}
+[10.214916] (-) TimerEvent: {}
+[10.240921] (battle_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/battle_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/battle_interfaces/msg/detail/dds_fastrtps/target_array__type_support.cpp.o\x1b[0m\n'}
+[10.316021] (-) TimerEvent: {}
+[10.416975] (-) TimerEvent: {}
+[10.518197] (-) TimerEvent: {}
+[10.620100] (-) TimerEvent: {}
+[10.725059] (-) TimerEvent: {}
+[10.757602] (battle_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/battle_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/battle_interfaces/msg/detail/aim_vector__type_support_c.cpp.o\x1b[0m\n'}
+[10.825199] (-) TimerEvent: {}
+[10.925684] (-) TimerEvent: {}
+[11.026456] (-) TimerEvent: {}
+[11.132955] (-) TimerEvent: {}
+[11.236028] (-) TimerEvent: {}
+[11.337967] (-) TimerEvent: {}
+[11.357116] (battle_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/battle_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/battle_interfaces/srv/pointing__type_support.cpp.o\x1b[0m\n'}
+[11.440023] (-) TimerEvent: {}
+[11.545027] (-) TimerEvent: {}
+[11.646491] (-) TimerEvent: {}
+[11.725074] (battle_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/battle_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/battle_interfaces/msg/detail/aim_vector__type_support.cpp.o\x1b[0m\n'}
+[11.746623] (-) TimerEvent: {}
+[11.848957] (-) TimerEvent: {}
+[11.950023] (-) TimerEvent: {}
+[12.051372] (-) TimerEvent: {}
+[12.152480] (-) TimerEvent: {}
+[12.237572] (battle_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/battle_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/battle_interfaces/msg/detail/dds_fastrtps/aim_vector__type_support.cpp.o\x1b[0m\n'}
+[12.252612] (-) TimerEvent: {}
+[12.353623] (-) TimerEvent: {}
+[12.400837] (battle_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/battle_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/battle_interfaces/srv/detail/pointing__type_support_c.cpp.o\x1b[0m\n'}
+[12.454838] (-) TimerEvent: {}
+[12.512931] (battle_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking CXX shared library libbattle_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[12.558025] (-) TimerEvent: {}
+[12.639729] (battle_interfaces) StdoutLine: {'line': b'[ 47%] Built target battle_interfaces__rosidl_typesupport_cpp\n'}
+[12.658152] (-) TimerEvent: {}
+[12.665871] (battle_interfaces) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/battle_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/battle_interfaces/srv/detail/dds_fastrtps/pointing__type_support.cpp.o\x1b[0m\n'}
+[12.758276] (-) TimerEvent: {}
+[12.859241] (-) TimerEvent: {}
+[12.961393] (-) TimerEvent: {}
+[13.061807] (-) TimerEvent: {}
+[13.122002] (battle_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/battle_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/battle_interfaces/srv/detail/pointing__type_support.cpp.o\x1b[0m\n'}
+[13.163032] (-) TimerEvent: {}
+[13.263494] (-) TimerEvent: {}
+[13.363949] (-) TimerEvent: {}
+[13.468059] (battle_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking CXX shared library libbattle_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[13.468406] (-) TimerEvent: {}
+[13.569307] (-) TimerEvent: {}
+[13.649885] (battle_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[13.669426] (-) TimerEvent: {}
+[13.681962] (battle_interfaces) StdoutLine: {'line': b'[ 54%] Built target battle_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[13.707851] (battle_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[13.772014] (-) TimerEvent: {}
+[13.872466] (-) TimerEvent: {}
+[13.973925] (-) TimerEvent: {}
+[14.065719] (battle_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libbattle_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[14.074324] (-) TimerEvent: {}
+[14.174744] (-) TimerEvent: {}
+[14.275202] (-) TimerEvent: {}
+[14.333521] (battle_interfaces) StdoutLine: {'line': b'[ 58%] Built target battle_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[14.375875] (-) TimerEvent: {}
+[14.450496] (battle_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libbattle_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[14.477377] (-) TimerEvent: {}
+[14.580015] (-) TimerEvent: {}
+[14.646627] (battle_interfaces) StdoutLine: {'line': b'[ 60%] Built target battle_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[14.680148] (-) TimerEvent: {}
+[14.768572] (battle_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/battle_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/battle_interfaces/msg/target_array__type_support.cpp.o\x1b[0m\n'}
+[14.768944] (battle_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/battle_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/battle_interfaces/msg/aim_vector__type_support.cpp.o\x1b[0m\n'}
+[14.769212] (battle_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/battle_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/battle_interfaces/msg/target__type_support.cpp.o\x1b[0m\n'}
+[14.781092] (-) TimerEvent: {}
+[14.844764] (battle_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/battle_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/battle_interfaces/srv/pointing__type_support.cpp.o\x1b[0m\n'}
+[14.882162] (-) TimerEvent: {}
+[14.914759] (battle_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libbattle_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[14.933831] (battle_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding C object CMakeFiles/battle_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/battle_interfaces/msg/detail/target_array__type_support.c.o\x1b[0m\n'}
+[14.934615] (battle_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding C object CMakeFiles/battle_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/battle_interfaces/msg/detail/target__type_support.c.o\x1b[0m\n'}
+[14.934904] (battle_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding C object CMakeFiles/battle_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/battle_interfaces/msg/detail/aim_vector__type_support.c.o\x1b[0m\n'}
+[14.983352] (-) TimerEvent: {}
+[15.012795] (battle_interfaces) StdoutLine: {'line': b'[ 74%] Built target battle_interfaces__rosidl_typesupport_c\n'}
+[15.014240] (battle_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding C object CMakeFiles/battle_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/battle_interfaces/srv/detail/pointing__type_support.c.o\x1b[0m\n'}
+[15.067339] (battle_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking C shared library libbattle_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[15.083489] (-) TimerEvent: {}
+[15.119051] (battle_interfaces) StdoutLine: {'line': b'[ 78%] Built target battle_interfaces__rosidl_typesupport_introspection_c\n'}
+[15.148622] (battle_interfaces) StdoutLine: {'line': b'[ 78%] Built target battle_interfaces\n'}
+[15.176496] (battle_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[15.183595] (-) TimerEvent: {}
+[15.283958] (-) TimerEvent: {}
+[15.384296] (-) TimerEvent: {}
+[15.484635] (-) TimerEvent: {}
+[15.584989] (-) TimerEvent: {}
+[15.685324] (-) TimerEvent: {}
+[15.785680] (-) TimerEvent: {}
+[15.886009] (-) TimerEvent: {}
+[15.986340] (-) TimerEvent: {}
+[16.086673] (-) TimerEvent: {}
+[16.187009] (-) TimerEvent: {}
+[16.287407] (-) TimerEvent: {}
+[16.360063] (battle_interfaces) StdoutLine: {'line': b'[ 80%] Built target battle_interfaces__py\n'}
+[16.388131] (-) TimerEvent: {}
+[16.393805] (battle_interfaces) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/battle_interfaces__rosidl_generator_py.dir/rosidl_generator_py/battle_interfaces/msg/_target_array_s.c.o\x1b[0m\n'}
+[16.399076] (battle_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/battle_interfaces__rosidl_generator_py.dir/rosidl_generator_py/battle_interfaces/msg/_target_s.c.o\x1b[0m\n'}
+[16.399427] (battle_interfaces) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/battle_interfaces__rosidl_generator_py.dir/rosidl_generator_py/battle_interfaces/srv/_pointing_s.c.o\x1b[0m\n'}
+[16.402118] (battle_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/battle_interfaces__rosidl_generator_py.dir/rosidl_generator_py/battle_interfaces/msg/_aim_vector_s.c.o\x1b[0m\n'}
+[16.488456] (-) TimerEvent: {}
+[16.588926] (-) TimerEvent: {}
+[16.689360] (-) TimerEvent: {}
+[16.755957] (battle_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/battle_interfaces/libbattle_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[16.789501] (-) TimerEvent: {}
+[16.825870] (battle_interfaces) StdoutLine: {'line': b'[ 89%] Built target battle_interfaces__rosidl_generator_py\n'}
+[16.862656] (battle_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/battle_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/battle_interfaces/_battle_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[16.864462] (battle_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/battle_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/battle_interfaces/_battle_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[16.864774] (battle_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/battle_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/battle_interfaces/_battle_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[16.889628] (-) TimerEvent: {}
+[16.990064] (-) TimerEvent: {}
+[17.088011] (battle_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/battle_interfaces/battle_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[17.090165] (-) TimerEvent: {}
+[17.159382] (battle_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/battle_interfaces/battle_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[17.162098] (battle_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/battle_interfaces/battle_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[17.178209] (battle_interfaces) StdoutLine: {'line': b'[100%] Built target battle_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[17.190306] (-) TimerEvent: {}
+[17.230448] (battle_interfaces) StdoutLine: {'line': b'[100%] Built target battle_interfaces__rosidl_typesupport_c__pyext\n'}
+[17.232694] (battle_interfaces) StdoutLine: {'line': b'[100%] Built target battle_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[17.251067] (battle_interfaces) CommandEnded: {'returncode': 0}
+[17.252240] (battle_interfaces) JobProgress: {'identifier': 'battle_interfaces', 'progress': 'install'}
+[17.263898] (battle_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/willi/battle_ws/build/battle_interfaces'], 'cwd': '/home/willi/battle_ws/build/battle_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'willi'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/willi/battle_ws/install/battle_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/willi'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/willi/battle_ws'), ('TERM_PROGRAM_VERSION', '1.99.3'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1895'), ('BUNDLED_DEBUGPY_PATH', '/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/willi/battle_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'willi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'willi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/willi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/willi-Lenovo-Z580:@/tmp/.ICE-unix/1655,unix/willi-Lenovo-Z580:/tmp/.ICE-unix/1655'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/79642a07_7e7c_4be8_a4ff_6849159529dd'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-297ebcadc624d894.txt'), ('LANG', 'uk_UA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7c7c68222e.sock'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/willi/battle_ws/install/fire_tracker:/home/willi/battle_ws/install/battle_interfaces:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/willi/battle_ws/build/battle_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib::/opt/ros/humble/lib:/opt/ros/humble/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/willi/battle_ws/build/fire_tracker:/home/willi/battle_ws/install/fire_tracker/lib/python3.10/site-packages:/home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/willi/battle_ws/install/battle_interfaces:/home/willi/battle_ws/install/fire_tracker:/opt/ros/humble')]), 'shell': False}
+[17.275426] (battle_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.276585] (battle_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[17.277176] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/ament_index/resource_index/rosidl_interfaces/battle_interfaces\n'}
+[17.289643] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/aim_vector.h\n'}
+[17.290425] (-) TimerEvent: {}
+[17.303122] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/aim_vector__functions.h\n'}
+[17.318785] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/aim_vector__struct.h\n'}
+[17.332315] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/aim_vector__type_support.h\n'}
+[17.343527] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/target__functions.h\n'}
+[17.355789] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/target__struct.h\n'}
+[17.367022] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/target__type_support.h\n'}
+[17.379560] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/target_array__functions.h\n'}
+[17.390532] (-) TimerEvent: {}
+[17.391548] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/target_array__struct.h\n'}
+[17.408527] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/target_array__type_support.h\n'}
+[17.423735] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[17.436176] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/target.h\n'}
+[17.447405] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/target_array.h\n'}
+[17.460581] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/srv/detail/pointing__functions.h\n'}
+[17.473165] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/srv/detail/pointing__struct.h\n'}
+[17.484276] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/srv/detail/pointing__type_support.h\n'}
+[17.490655] (-) TimerEvent: {}
+[17.495772] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/srv/pointing.h\n'}
+[17.512986] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/environment/library_path.sh\n'}
+[17.527804] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/environment/library_path.dsv\n'}
+[17.541727] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/aim_vector__rosidl_typesupport_fastrtps_c.h\n'}
+[17.555292] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/target__rosidl_typesupport_fastrtps_c.h\n'}
+[17.567118] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/target_array__rosidl_typesupport_fastrtps_c.h\n'}
+[17.581347] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[17.590781] (-) TimerEvent: {}
+[17.596081] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/srv/detail/pointing__rosidl_typesupport_fastrtps_c.h\n'}
+[17.613687] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/aim_vector__rosidl_typesupport_introspection_c.h\n'}
+[17.627372] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/target__rosidl_typesupport_introspection_c.h\n'}
+[17.641497] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/target_array__rosidl_typesupport_introspection_c.h\n'}
+[17.654112] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[17.666971] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/srv/detail/pointing__rosidl_typesupport_introspection_c.h\n'}
+[17.682281] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/aim_vector.hpp\n'}
+[17.690928] (-) TimerEvent: {}
+[17.694571] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/aim_vector__builder.hpp\n'}
+[17.709420] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/aim_vector__struct.hpp\n'}
+[17.724843] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/aim_vector__traits.hpp\n'}
+[17.738241] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/aim_vector__type_support.hpp\n'}
+[17.751225] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/target__builder.hpp\n'}
+[17.763625] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/target__struct.hpp\n'}
+[17.776164] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/target__traits.hpp\n'}
+[17.788819] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/target__type_support.hpp\n'}
+[17.791032] (-) TimerEvent: {}
+[17.803736] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/target_array__builder.hpp\n'}
+[17.821117] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/target_array__struct.hpp\n'}
+[17.835250] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/target_array__traits.hpp\n'}
+[17.847101] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/target_array__type_support.hpp\n'}
+[17.859339] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[17.870914] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/target.hpp\n'}
+[17.884031] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/target_array.hpp\n'}
+[17.891179] (-) TimerEvent: {}
+[17.895147] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/srv/detail/pointing__builder.hpp\n'}
+[17.911656] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/srv/detail/pointing__struct.hpp\n'}
+[17.926359] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/srv/detail/pointing__traits.hpp\n'}
+[17.939709] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/srv/detail/pointing__type_support.hpp\n'}
+[17.952132] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/srv/pointing.hpp\n'}
+[17.964658] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/aim_vector__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.976099] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/target__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.987626] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/target_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.991296] (-) TimerEvent: {}
+[18.000621] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[18.017409] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/srv/detail/pointing__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[18.032457] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/aim_vector__rosidl_typesupport_introspection_cpp.hpp\n'}
+[18.046295] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/target__rosidl_typesupport_introspection_cpp.hpp\n'}
+[18.058777] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/msg/detail/target_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[18.072092] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/include/battle_interfaces/battle_interfaces/srv/detail/pointing__rosidl_typesupport_introspection_cpp.hpp\n'}
+[18.085450] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/environment/pythonpath.sh\n'}
+[18.091556] (-) TimerEvent: {}
+[18.098643] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/environment/pythonpath.dsv\n'}
+[18.120679] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces-0.0.2-py3.10.egg-info/PKG-INFO\n'}
+[18.140708] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces-0.0.2-py3.10.egg-info/SOURCES.txt\n'}
+[18.162106] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces-0.0.2-py3.10.egg-info/dependency_links.txt\n'}
+[18.186070] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces-0.0.2-py3.10.egg-info/top_level.txt\n'}
+[18.191557] (-) TimerEvent: {}
+[18.213419] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/__init__.py\n'}
+[18.235191] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/_battle_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[18.257835] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/_battle_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[18.277394] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/_battle_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[18.291682] (-) TimerEvent: {}
+[18.297851] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/battle_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.317153] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/battle_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.342926] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/battle_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.360664] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/libbattle_interfaces__rosidl_generator_py.so\n'}
+[18.381502] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/msg/__init__.py\n'}
+[18.391860] (-) TimerEvent: {}
+[18.399992] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/msg/_aim_vector.py\n'}
+[18.416558] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/msg/_aim_vector_s.c\n'}
+[18.435760] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/msg/_target.py\n'}
+[18.455243] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/msg/_target_array.py\n'}
+[18.474749] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/msg/_target_array_s.c\n'}
+[18.492002] (-) TimerEvent: {}
+[18.492344] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/msg/_target_s.c\n'}
+[18.509216] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/srv/__init__.py\n'}
+[18.528383] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/srv/_pointing.py\n'}
+[18.550995] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/srv/_pointing_s.c\n'}
+[18.571184] (battle_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/battle_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.571732] (battle_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/battle_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.573885] (battle_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/battle_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.574321] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/msg/Target.idl\n'}
+[18.592169] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/msg/TargetArray.idl\n'}
+[18.592462] (-) TimerEvent: {}
+[18.609510] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/msg/AimVector.idl\n'}
+[18.628930] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/srv/Pointing.idl\n'}
+[18.650830] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/msg/Target.msg\n'}
+[18.667206] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/msg/TargetArray.msg\n'}
+[18.689477] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/msg/AimVector.msg\n'}
+[18.692904] (-) TimerEvent: {}
+[18.710364] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/srv/Pointing.srv\n'}
+[18.732526] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/srv/Pointing_Request.msg\n'}
+[18.755074] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/srv/Pointing_Response.msg\n'}
+[18.774718] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/ament_index/resource_index/package_run_dependencies/battle_interfaces\n'}
+[18.794407] (-) TimerEvent: {}
+[18.798439] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/ament_index/resource_index/parent_prefix_path/battle_interfaces\n'}
+[18.819195] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/environment/ament_prefix_path.sh\n'}
+[18.841079] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/environment/ament_prefix_path.dsv\n'}
+[18.862482] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/environment/path.sh\n'}
+[18.881619] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/environment/path.dsv\n'}
+[18.894619] (-) TimerEvent: {}
+[18.902970] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/local_setup.bash\n'}
+[18.923329] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/local_setup.sh\n'}
+[18.944279] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/local_setup.zsh\n'}
+[18.968319] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/local_setup.dsv\n'}
+[18.986104] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/package.dsv\n'}
+[18.994881] (-) TimerEvent: {}
+[19.009061] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/ament_index/resource_index/packages/battle_interfaces\n'}
+[19.032346] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[19.053608] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[19.070861] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[19.087484] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[19.095231] (-) TimerEvent: {}
+[19.104454] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[19.121538] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[19.139738] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[19.156915] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/battle_interfacesConfig.cmake\n'}
+[19.172260] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/battle_interfacesConfig-version.cmake\n'}
+[19.189632] (battle_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/package.xml\n'}
+[19.195606] (-) TimerEvent: {}
+[19.207310] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/lib/libbattle_interfaces__rosidl_generator_c.so\n'}
+[19.209174] (battle_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/willi/battle_ws/install/battle_interfaces/lib/libbattle_interfaces__rosidl_generator_c.so" to ""\n'}
+[19.209510] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/lib/libbattle_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[19.209953] (battle_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/willi/battle_ws/install/battle_interfaces/lib/libbattle_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[19.210289] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/lib/libbattle_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[19.213287] (battle_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/willi/battle_ws/install/battle_interfaces/lib/libbattle_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[19.213599] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/lib/libbattle_interfaces__rosidl_typesupport_c.so\n'}
+[19.213796] (battle_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/willi/battle_ws/install/battle_interfaces/lib/libbattle_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[19.214011] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/lib/libbattle_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[19.214237] (battle_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/willi/battle_ws/install/battle_interfaces/lib/libbattle_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[19.214488] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/lib/libbattle_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[19.215664] (battle_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/willi/battle_ws/install/battle_interfaces/lib/libbattle_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[19.216462] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/lib/libbattle_interfaces__rosidl_typesupport_cpp.so\n'}
+[19.216667] (battle_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/willi/battle_ws/install/battle_interfaces/lib/libbattle_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[19.296278] (-) TimerEvent: {}
+[19.311457] (battle_interfaces) StdoutLine: {'line': b"Listing '/home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces'...\n"}
+[19.312194] (battle_interfaces) StdoutLine: {'line': b"Compiling '/home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/__init__.py'...\n"}
+[19.312615] (battle_interfaces) StdoutLine: {'line': b"Listing '/home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/msg'...\n"}
+[19.312828] (battle_interfaces) StdoutLine: {'line': b"Compiling '/home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/msg/__init__.py'...\n"}
+[19.313051] (battle_interfaces) StdoutLine: {'line': b"Compiling '/home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/msg/_aim_vector.py'...\n"}
+[19.313265] (battle_interfaces) StdoutLine: {'line': b"Compiling '/home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/msg/_target.py'...\n"}
+[19.313457] (battle_interfaces) StdoutLine: {'line': b"Compiling '/home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/msg/_target_array.py'...\n"}
+[19.313646] (battle_interfaces) StdoutLine: {'line': b"Listing '/home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/srv'...\n"}
+[19.313832] (battle_interfaces) StdoutLine: {'line': b"Compiling '/home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/srv/__init__.py'...\n"}
+[19.314040] (battle_interfaces) StdoutLine: {'line': b"Compiling '/home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages/battle_interfaces/srv/_pointing.py'...\n"}
+[19.327342] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/lib/libbattle_interfaces__rosidl_generator_py.so\n'}
+[19.328761] (battle_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/willi/battle_ws/install/battle_interfaces/lib/libbattle_interfaces__rosidl_generator_py.so" to ""\n'}
+[19.329227] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/export_battle_interfaces__rosidl_generator_cExport.cmake\n'}
+[19.329449] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/export_battle_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[19.329730] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/export_battle_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[19.330398] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/export_battle_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[19.331219] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/battle_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[19.331499] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/battle_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[19.332319] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/battle_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[19.332635] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/battle_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[19.332842] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/export_battle_interfaces__rosidl_generator_cppExport.cmake\n'}
+[19.333824] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/export_battle_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[19.334453] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/export_battle_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[19.334786] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/battle_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[19.336535] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/battle_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[19.336709] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/battle_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[19.336875] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/battle_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[19.337106] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/export_battle_interfaces__rosidl_generator_pyExport.cmake\n'}
+[19.337425] (battle_interfaces) StdoutLine: {'line': b'-- Installing: /home/willi/battle_ws/install/battle_interfaces/share/battle_interfaces/cmake/export_battle_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[19.339208] (battle_interfaces) CommandEnded: {'returncode': 0}
+[19.396449] (-) TimerEvent: {}
+[19.432235] (battle_interfaces) JobEnded: {'identifier': 'battle_interfaces', 'rc': 0}
+[19.436329] (command_center) JobStarted: {'identifier': 'command_center'}
+[19.459233] (fire_platform) JobStarted: {'identifier': 'fire_platform'}
+[19.487877] (fire_platform_3) JobStarted: {'identifier': 'fire_platform_3'}
+[19.496563] (-) TimerEvent: {}
+[19.516319] (fire_tracker) JobStarted: {'identifier': 'fire_tracker'}
+[19.596683] (-) TimerEvent: {}
+[19.697795] (-) TimerEvent: {}
+[19.798732] (-) TimerEvent: {}
+[19.900687] (-) TimerEvent: {}
+[20.001198] (-) TimerEvent: {}
+[20.107851] (-) TimerEvent: {}
+[20.208803] (-) TimerEvent: {}
+[20.310435] (-) TimerEvent: {}
+[20.413186] (-) TimerEvent: {}
+[20.514010] (-) TimerEvent: {}
+[20.617415] (-) TimerEvent: {}
+[20.718450] (-) TimerEvent: {}
+[20.818925] (-) TimerEvent: {}
+[20.920277] (-) TimerEvent: {}
+[21.022881] (-) TimerEvent: {}
+[21.124021] (-) TimerEvent: {}
+[21.225890] (-) TimerEvent: {}
+[21.326699] (-) TimerEvent: {}
+[21.427925] (-) TimerEvent: {}
+[21.528918] (-) TimerEvent: {}
+[21.630190] (-) TimerEvent: {}
+[21.731214] (-) TimerEvent: {}
+[21.831998] (-) TimerEvent: {}
+[21.932342] (-) TimerEvent: {}
+[22.032692] (-) TimerEvent: {}
+[22.133027] (-) TimerEvent: {}
+[22.233381] (-) TimerEvent: {}
+[22.333778] (-) TimerEvent: {}
+[22.434234] (-) TimerEvent: {}
+[22.534649] (-) TimerEvent: {}
+[22.635005] (-) TimerEvent: {}
+[22.735392] (-) TimerEvent: {}
+[22.835791] (-) TimerEvent: {}
+[22.936232] (-) TimerEvent: {}
+[23.036785] (-) TimerEvent: {}
+[23.137233] (-) TimerEvent: {}
+[23.237606] (-) TimerEvent: {}
+[23.338021] (-) TimerEvent: {}
+[23.441386] (-) TimerEvent: {}
+[23.545015] (-) TimerEvent: {}
+[23.646974] (-) TimerEvent: {}
+[23.747851] (-) TimerEvent: {}
+[23.851452] (-) TimerEvent: {}
+[23.952364] (-) TimerEvent: {}
+[24.052842] (-) TimerEvent: {}
+[24.153294] (-) TimerEvent: {}
+[24.254271] (-) TimerEvent: {}
+[24.355236] (-) TimerEvent: {}
+[24.456232] (-) TimerEvent: {}
+[24.557786] (-) TimerEvent: {}
+[24.659436] (-) TimerEvent: {}
+[24.760060] (-) TimerEvent: {}
+[24.863006] (-) TimerEvent: {}
+[24.963426] (-) TimerEvent: {}
+[25.063906] (-) TimerEvent: {}
+[25.164424] (-) TimerEvent: {}
+[25.265379] (-) TimerEvent: {}
+[25.369265] (-) TimerEvent: {}
+[25.472632] (-) TimerEvent: {}
+[25.537035] (fire_platform_3) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/willi/battle_ws/build/fire_platform_3/build', '--no-deps', 'symlink_data'], 'cwd': '/home/willi/battle_ws/build/fire_platform_3', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'willi', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/willi/battle_ws/install/battle_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/willi', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/willi/battle_ws', 'TERM_PROGRAM_VERSION': '1.99.3', 'DESKTOP_SESSION': 'ubuntu-xorg', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '1895', 'BUNDLED_DEBUGPY_PATH': '/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/willi/battle_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'willi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'willi', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/willi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/willi-Lenovo-Z580:@/tmp/.ICE-unix/1655,unix/willi-Lenovo-Z580:/tmp/.ICE-unix/1655', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/79642a07_7e7c_4be8_a4ff_6849159529dd', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-297ebcadc624d894.txt', 'LANG': 'uk_UA.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7c7c68222e.sock', 'GNOME_TERMINAL_SERVICE': ':1.97', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/willi/battle_ws/install/fire_tracker:/home/willi/battle_ws/install/battle_interfaces:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu-xorg', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/willi/battle_ws/build/fire_platform_3', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib::/opt/ros/humble/lib:/opt/ros/humble/lib', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/willi/battle_ws/build/fire_platform_3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages:/home/willi/battle_ws/build/fire_tracker:/home/willi/battle_ws/install/fire_tracker/lib/python3.10/site-packages:/home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/willi/battle_ws/install/battle_interfaces'}, 'shell': False}
+[25.575020] (-) TimerEvent: {}
+[25.679010] (-) TimerEvent: {}
+[25.779848] (-) TimerEvent: {}
+[25.888085] (-) TimerEvent: {}
+[25.989263] (-) TimerEvent: {}
+[26.094453] (-) TimerEvent: {}
+[26.197102] (-) TimerEvent: {}
+[26.297763] (-) TimerEvent: {}
+[26.401461] (-) TimerEvent: {}
+[26.507020] (-) TimerEvent: {}
+[26.583620] (command_center) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/willi/battle_ws/build/command_center/build', '--no-deps', 'symlink_data'], 'cwd': '/home/willi/battle_ws/build/command_center', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'willi', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/willi/battle_ws/install/battle_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/willi', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/willi/battle_ws', 'TERM_PROGRAM_VERSION': '1.99.3', 'DESKTOP_SESSION': 'ubuntu-xorg', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '1895', 'BUNDLED_DEBUGPY_PATH': '/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/willi/battle_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'willi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'willi', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/willi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/willi-Lenovo-Z580:@/tmp/.ICE-unix/1655,unix/willi-Lenovo-Z580:/tmp/.ICE-unix/1655', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/79642a07_7e7c_4be8_a4ff_6849159529dd', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-297ebcadc624d894.txt', 'LANG': 'uk_UA.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7c7c68222e.sock', 'GNOME_TERMINAL_SERVICE': ':1.97', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/willi/battle_ws/install/fire_tracker:/home/willi/battle_ws/install/battle_interfaces:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu-xorg', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/willi/battle_ws/build/command_center', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib::/opt/ros/humble/lib:/opt/ros/humble/lib', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/willi/battle_ws/build/command_center/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/willi/battle_ws/install/command_center/lib/python3.10/site-packages:/home/willi/battle_ws/build/fire_tracker:/home/willi/battle_ws/install/fire_tracker/lib/python3.10/site-packages:/home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/willi/battle_ws/install/battle_interfaces'}, 'shell': False}
+[26.617047] (-) TimerEvent: {}
+[26.724001] (-) TimerEvent: {}
+[26.826125] (-) TimerEvent: {}
+[26.929088] (-) TimerEvent: {}
+[26.965653] (fire_platform) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/willi/battle_ws/build/fire_platform/build', '--no-deps', 'symlink_data'], 'cwd': '/home/willi/battle_ws/build/fire_platform', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'willi', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/willi/battle_ws/install/battle_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/willi', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/willi/battle_ws', 'TERM_PROGRAM_VERSION': '1.99.3', 'DESKTOP_SESSION': 'ubuntu-xorg', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '1895', 'BUNDLED_DEBUGPY_PATH': '/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/willi/battle_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'willi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'willi', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/willi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/willi-Lenovo-Z580:@/tmp/.ICE-unix/1655,unix/willi-Lenovo-Z580:/tmp/.ICE-unix/1655', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/79642a07_7e7c_4be8_a4ff_6849159529dd', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-297ebcadc624d894.txt', 'LANG': 'uk_UA.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7c7c68222e.sock', 'GNOME_TERMINAL_SERVICE': ':1.97', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/willi/battle_ws/install/fire_tracker:/home/willi/battle_ws/install/battle_interfaces:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu-xorg', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/willi/battle_ws/build/fire_platform', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib::/opt/ros/humble/lib:/opt/ros/humble/lib', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/willi/battle_ws/build/fire_platform/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/willi/battle_ws/install/fire_platform/lib/python3.10/site-packages:/home/willi/battle_ws/build/fire_tracker:/home/willi/battle_ws/install/fire_tracker/lib/python3.10/site-packages:/home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/willi/battle_ws/install/battle_interfaces'}, 'shell': False}
+[27.035856] (-) TimerEvent: {}
+[27.137359] (-) TimerEvent: {}
+[27.240022] (-) TimerEvent: {}
+[27.340488] (-) TimerEvent: {}
+[27.447004] (-) TimerEvent: {}
+[27.549802] (-) TimerEvent: {}
+[27.655680] (-) TimerEvent: {}
+[27.761053] (-) TimerEvent: {}
+[27.862529] (-) TimerEvent: {}
+[27.963006] (-) TimerEvent: {}
+[28.063414] (-) TimerEvent: {}
+[28.136425] (command_center) StdoutLine: {'line': b'running develop\n'}
+[28.163550] (-) TimerEvent: {}
+[28.265478] (-) TimerEvent: {}
+[28.367105] (-) TimerEvent: {}
+[28.470501] (-) TimerEvent: {}
+[28.481414] (fire_platform) StdoutLine: {'line': b'running develop\n'}
+[28.580292] (-) TimerEvent: {}
+[28.681024] (-) TimerEvent: {}
+[28.781882] (-) TimerEvent: {}
+[28.884106] (-) TimerEvent: {}
+[28.927285] (fire_platform_3) StdoutLine: {'line': b'running develop\n'}
+[28.945892] (fire_tracker) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/willi/battle_ws/build/fire_tracker/build', '--no-deps', 'symlink_data'], 'cwd': '/home/willi/battle_ws/build/fire_tracker', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'willi', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/willi/battle_ws/install/battle_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/willi', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/willi/battle_ws', 'TERM_PROGRAM_VERSION': '1.99.3', 'DESKTOP_SESSION': 'ubuntu-xorg', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '1895', 'BUNDLED_DEBUGPY_PATH': '/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/willi/battle_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'willi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'willi', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/willi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/willi-Lenovo-Z580:@/tmp/.ICE-unix/1655,unix/willi-Lenovo-Z580:/tmp/.ICE-unix/1655', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/79642a07_7e7c_4be8_a4ff_6849159529dd', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-297ebcadc624d894.txt', 'LANG': 'uk_UA.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7c7c68222e.sock', 'GNOME_TERMINAL_SERVICE': ':1.97', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/willi/battle_ws/install/fire_tracker:/home/willi/battle_ws/install/battle_interfaces:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu-xorg', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/willi/battle_ws/build/fire_tracker', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib::/opt/ros/humble/lib:/opt/ros/humble/lib', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/willi/battle_ws/build/fire_tracker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/willi/battle_ws/install/fire_tracker/lib/python3.10/site-packages:/home/willi/battle_ws/build/fire_tracker:/home/willi/battle_ws/install/fire_tracker/lib/python3.10/site-packages:/home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/willi/battle_ws/install/battle_interfaces'}, 'shell': False}
+[28.986820] (-) TimerEvent: {}
+[29.092589] (-) TimerEvent: {}
+[29.195661] (-) TimerEvent: {}
+[29.299690] (-) TimerEvent: {}
+[29.404036] (-) TimerEvent: {}
+[29.504549] (-) TimerEvent: {}
+[29.606672] (-) TimerEvent: {}
+[29.708351] (-) TimerEvent: {}
+[29.800179] (command_center) StdoutLine: {'line': b'running egg_info\n'}
+[29.800889] (command_center) StdoutLine: {'line': b'creating command_center.egg-info\n'}
+[29.808465] (-) TimerEvent: {}
+[29.859475] (command_center) StdoutLine: {'line': b'writing command_center.egg-info/PKG-INFO\n'}
+[29.862487] (command_center) StdoutLine: {'line': b'writing dependency_links to command_center.egg-info/dependency_links.txt\n'}
+[29.864632] (command_center) StdoutLine: {'line': b'writing entry points to command_center.egg-info/entry_points.txt\n'}
+[29.866086] (command_center) StdoutLine: {'line': b'writing requirements to command_center.egg-info/requires.txt\n'}
+[29.867357] (command_center) StdoutLine: {'line': b'writing top-level names to command_center.egg-info/top_level.txt\n'}
+[29.871009] (command_center) StdoutLine: {'line': b"writing manifest file 'command_center.egg-info/SOURCES.txt'\n"}
+[29.908583] (-) TimerEvent: {}
+[29.992633] (command_center) StdoutLine: {'line': b"reading manifest file 'command_center.egg-info/SOURCES.txt'\n"}
+[30.002128] (command_center) StdoutLine: {'line': b"writing manifest file 'command_center.egg-info/SOURCES.txt'\n"}
+[30.008706] (-) TimerEvent: {}
+[30.109736] (-) TimerEvent: {}
+[30.148495] (fire_platform) StdoutLine: {'line': b'running egg_info\n'}
+[30.149103] (fire_platform) StdoutLine: {'line': b'creating fire_platform.egg-info\n'}
+[30.162887] (command_center) StdoutLine: {'line': b'running build_ext\n'}
+[30.163377] (command_center) StdoutLine: {'line': b'Creating /home/willi/battle_ws/install/command_center/lib/python3.10/site-packages/command-center.egg-link (link to .)\n'}
+[30.170115] (command_center) StdoutLine: {'line': b'Installing commander_node script to /home/willi/battle_ws/install/command_center/lib/command_center\n'}
+[30.173200] (command_center) StdoutLine: {'line': b'\n'}
+[30.173549] (command_center) StdoutLine: {'line': b'Installed /home/willi/battle_ws/build/command_center\n'}
+[30.173952] (command_center) StdoutLine: {'line': b'running symlink_data\n'}
+[30.174313] (command_center) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/command_center/share/ament_index\n'}
+[30.174552] (command_center) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/command_center/share/ament_index/resource_index\n'}
+[30.174783] (command_center) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/command_center/share/ament_index/resource_index/packages\n'}
+[30.175034] (command_center) StdoutLine: {'line': b'symbolically linking /home/willi/battle_ws/build/command_center/resource/command_center -> /home/willi/battle_ws/install/command_center/share/ament_index/resource_index/packages\n'}
+[30.175256] (command_center) StdoutLine: {'line': b'symbolically linking /home/willi/battle_ws/build/command_center/package.xml -> /home/willi/battle_ws/install/command_center/share/command_center\n'}
+[30.204536] (fire_platform) StdoutLine: {'line': b'writing fire_platform.egg-info/PKG-INFO\n'}
+[30.205597] (fire_platform) StdoutLine: {'line': b'writing dependency_links to fire_platform.egg-info/dependency_links.txt\n'}
+[30.206845] (fire_platform) StdoutLine: {'line': b'writing entry points to fire_platform.egg-info/entry_points.txt\n'}
+[30.207201] (fire_platform) StdoutLine: {'line': b'writing requirements to fire_platform.egg-info/requires.txt\n'}
+[30.208074] (fire_platform) StdoutLine: {'line': b'writing top-level names to fire_platform.egg-info/top_level.txt\n'}
+[30.208316] (fire_platform) StdoutLine: {'line': b"writing manifest file 'fire_platform.egg-info/SOURCES.txt'\n"}
+[30.209844] (-) TimerEvent: {}
+[30.310579] (-) TimerEvent: {}
+[30.322085] (fire_platform) StdoutLine: {'line': b"reading manifest file 'fire_platform.egg-info/SOURCES.txt'\n"}
+[30.323597] (fire_platform) StdoutLine: {'line': b"writing manifest file 'fire_platform.egg-info/SOURCES.txt'\n"}
+[30.391442] (fire_platform) StdoutLine: {'line': b'running build_ext\n'}
+[30.391900] (fire_platform) StdoutLine: {'line': b'Creating /home/willi/battle_ws/install/fire_platform/lib/python3.10/site-packages/fire-platform.egg-link (link to .)\n'}
+[30.401210] (fire_platform) StdoutLine: {'line': b'Installing fire_node script to /home/willi/battle_ws/install/fire_platform/lib/fire_platform\n'}
+[30.401560] (fire_platform) StdoutLine: {'line': b'\n'}
+[30.401791] (fire_platform) StdoutLine: {'line': b'Installed /home/willi/battle_ws/build/fire_platform\n'}
+[30.402037] (fire_platform) StdoutLine: {'line': b'running symlink_data\n'}
+[30.402346] (fire_platform) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/fire_platform/share/ament_index\n'}
+[30.402573] (fire_platform) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/fire_platform/share/ament_index/resource_index\n'}
+[30.402777] (fire_platform) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/fire_platform/share/ament_index/resource_index/packages\n'}
+[30.402982] (fire_platform) StdoutLine: {'line': b'symbolically linking /home/willi/battle_ws/build/fire_platform/resource/fire_platform -> /home/willi/battle_ws/install/fire_platform/share/ament_index/resource_index/packages\n'}
+[30.403187] (fire_platform) StdoutLine: {'line': b'symbolically linking /home/willi/battle_ws/build/fire_platform/package.xml -> /home/willi/battle_ws/install/fire_platform/share/fire_platform\n'}
+[30.414113] (-) TimerEvent: {}
+[30.504370] (fire_tracker) StdoutLine: {'line': b'running develop\n'}
+[30.514208] (-) TimerEvent: {}
+[30.594010] (fire_platform) CommandEnded: {'returncode': 0}
+[30.624358] (-) TimerEvent: {}
+[30.683243] (fire_platform) JobEnded: {'identifier': 'fire_platform', 'rc': 0}
+[30.687298] (scan_platform) JobStarted: {'identifier': 'scan_platform'}
+[30.724475] (-) TimerEvent: {}
+[30.807163] (command_center) StdoutLine: {'line': b'running develop\n'}
+[30.824607] (-) TimerEvent: {}
+[30.925253] (-) TimerEvent: {}
+[30.940080] (fire_platform_3) StdoutLine: {'line': b'running egg_info\n'}
+[30.940598] (fire_platform_3) StdoutLine: {'line': b'creating fire_platform_3.egg-info\n'}
+[31.026058] (-) TimerEvent: {}
+[31.096931] (fire_platform_3) StdoutLine: {'line': b'writing fire_platform_3.egg-info/PKG-INFO\n'}
+[31.101519] (fire_platform_3) StdoutLine: {'line': b'writing dependency_links to fire_platform_3.egg-info/dependency_links.txt\n'}
+[31.101973] (fire_platform_3) StdoutLine: {'line': b'writing entry points to fire_platform_3.egg-info/entry_points.txt\n'}
+[31.104262] (fire_platform_3) StdoutLine: {'line': b'writing requirements to fire_platform_3.egg-info/requires.txt\n'}
+[31.105823] (fire_platform_3) StdoutLine: {'line': b'writing top-level names to fire_platform_3.egg-info/top_level.txt\n'}
+[31.106132] (fire_platform_3) StdoutLine: {'line': b"writing manifest file 'fire_platform_3.egg-info/SOURCES.txt'\n"}
+[31.129576] (-) TimerEvent: {}
+[31.237028] (-) TimerEvent: {}
+[31.342015] (-) TimerEvent: {}
+[31.442472] (-) TimerEvent: {}
+[31.476063] (fire_platform_3) StdoutLine: {'line': b"reading manifest file 'fire_platform_3.egg-info/SOURCES.txt'\n"}
+[31.480142] (fire_platform_3) StdoutLine: {'line': b"writing manifest file 'fire_platform_3.egg-info/SOURCES.txt'\n"}
+[31.545090] (-) TimerEvent: {}
+[31.648176] (-) TimerEvent: {}
+[31.652686] (command_center) StdoutLine: {'line': b'running egg_info\n'}
+[31.688382] (fire_platform_3) StdoutLine: {'line': b'running build_ext\n'}
+[31.693153] (fire_platform_3) StdoutLine: {'line': b'Creating /home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages/fire-platform-3.egg-link (link to .)\n'}
+[31.696699] (fire_platform_3) StdoutLine: {'line': b'Installing fire_node_3 script to /home/willi/battle_ws/install/fire_platform_3/lib/fire_platform_3\n'}
+[31.700692] (fire_platform_3) StdoutLine: {'line': b'\n'}
+[31.704901] (command_center) StdoutLine: {'line': b'writing command_center.egg-info/PKG-INFO\n'}
+[31.705166] (fire_platform_3) StdoutLine: {'line': b'Installed /home/willi/battle_ws/build/fire_platform_3\n'}
+[31.705378] (command_center) StdoutLine: {'line': b'writing dependency_links to command_center.egg-info/dependency_links.txt\n'}
+[31.705567] (command_center) StdoutLine: {'line': b'writing entry points to command_center.egg-info/entry_points.txt\n'}
+[31.705753] (command_center) StdoutLine: {'line': b'writing requirements to command_center.egg-info/requires.txt\n'}
+[31.705951] (command_center) StdoutLine: {'line': b'writing top-level names to command_center.egg-info/top_level.txt\n'}
+[31.706155] (fire_platform_3) StdoutLine: {'line': b'running symlink_data\n'}
+[31.712116] (fire_platform_3) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/fire_platform_3/share/ament_index\n'}
+[31.712426] (fire_platform_3) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/fire_platform_3/share/ament_index/resource_index\n'}
+[31.712626] (fire_platform_3) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/fire_platform_3/share/ament_index/resource_index/packages\n'}
+[31.715793] (fire_platform_3) StdoutLine: {'line': b'symbolically linking /home/willi/battle_ws/build/fire_platform_3/resource/fire_platform_3 -> /home/willi/battle_ws/install/fire_platform_3/share/ament_index/resource_index/packages\n'}
+[31.724022] (fire_platform_3) StdoutLine: {'line': b'symbolically linking /home/willi/battle_ws/build/fire_platform_3/package.xml -> /home/willi/battle_ws/install/fire_platform_3/share/fire_platform_3\n'}
+[31.753594] (-) TimerEvent: {}
+[31.808477] (command_center) StdoutLine: {'line': b"reading manifest file 'command_center.egg-info/SOURCES.txt'\n"}
+[31.821975] (command_center) StdoutLine: {'line': b"writing manifest file 'command_center.egg-info/SOURCES.txt'\n"}
+[31.856007] (-) TimerEvent: {}
+[31.873396] (command_center) StdoutLine: {'line': b'running build_ext\n'}
+[31.875146] (command_center) StdoutLine: {'line': b'Creating /home/willi/battle_ws/install/command_center/lib/python3.10/site-packages/command-center.egg-link (link to .)\n'}
+[31.875444] (command_center) StdoutLine: {'line': b'Installing commander_node script to /home/willi/battle_ws/install/command_center/lib/command_center\n'}
+[31.876739] (command_center) StdoutLine: {'line': b'\n'}
+[31.877221] (command_center) StdoutLine: {'line': b'Installed /home/willi/battle_ws/build/command_center\n'}
+[31.879087] (command_center) StdoutLine: {'line': b'running symlink_data\n'}
+[31.960662] (-) TimerEvent: {}
+[32.064645] (-) TimerEvent: {}
+[32.170516] (-) TimerEvent: {}
+[32.278531] (-) TimerEvent: {}
+[32.303013] (fire_tracker) StdoutLine: {'line': b'running egg_info\n'}
+[32.303424] (fire_tracker) StdoutLine: {'line': b'creating fire_tracker.egg-info\n'}
+[32.350127] (command_center) CommandEnded: {'returncode': 0}
+[32.369703] (fire_tracker) StdoutLine: {'line': b'writing fire_tracker.egg-info/PKG-INFO\n'}
+[32.370964] (fire_tracker) StdoutLine: {'line': b'writing dependency_links to fire_tracker.egg-info/dependency_links.txt\n'}
+[32.371858] (fire_tracker) StdoutLine: {'line': b'writing entry points to fire_tracker.egg-info/entry_points.txt\n'}
+[32.375529] (command_center) JobEnded: {'identifier': 'command_center', 'rc': 0}
+[32.376231] (fire_platform_3) CommandEnded: {'returncode': 0}
+[32.377025] (fire_tracker) StdoutLine: {'line': b'writing requirements to fire_tracker.egg-info/requires.txt\n'}
+[32.380428] (-) TimerEvent: {}
+[32.384022] (fire_tracker) StdoutLine: {'line': b'writing top-level names to fire_tracker.egg-info/top_level.txt\n'}
+[32.384819] (fire_tracker) StdoutLine: {'line': b"writing manifest file 'fire_tracker.egg-info/SOURCES.txt'\n"}
+[32.413570] (fire_platform_3) JobEnded: {'identifier': 'fire_platform_3', 'rc': 0}
+[32.485475] (-) TimerEvent: {}
+[32.487377] (fire_tracker) StdoutLine: {'line': b"reading manifest file 'fire_tracker.egg-info/SOURCES.txt'\n"}
+[32.487727] (fire_tracker) StdoutLine: {'line': b"writing manifest file 'fire_tracker.egg-info/SOURCES.txt'\n"}
+[32.541364] (fire_tracker) StdoutLine: {'line': b'running build_ext\n'}
+[32.542544] (fire_tracker) StdoutLine: {'line': b'Creating /home/willi/battle_ws/install/fire_tracker/lib/python3.10/site-packages/fire-tracker.egg-link (link to .)\n'}
+[32.546104] (fire_tracker) StdoutLine: {'line': b'Installing tracker_node script to /home/willi/battle_ws/install/fire_tracker/lib/fire_tracker\n'}
+[32.548240] (fire_tracker) StdoutLine: {'line': b'Installing tracker_node_fp3 script to /home/willi/battle_ws/install/fire_tracker/lib/fire_tracker\n'}
+[32.548479] (fire_tracker) StdoutLine: {'line': b'\n'}
+[32.549386] (fire_tracker) StdoutLine: {'line': b'Installed /home/willi/battle_ws/build/fire_tracker\n'}
+[32.549604] (fire_tracker) StdoutLine: {'line': b'running symlink_data\n'}
+[32.549792] (fire_tracker) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/fire_tracker/share/ament_index\n'}
+[32.550001] (fire_tracker) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/fire_tracker/share/ament_index/resource_index\n'}
+[32.550208] (fire_tracker) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/fire_tracker/share/ament_index/resource_index/packages\n'}
+[32.553604] (fire_tracker) StdoutLine: {'line': b'symbolically linking /home/willi/battle_ws/build/fire_tracker/resource/fire_tracker -> /home/willi/battle_ws/install/fire_tracker/share/ament_index/resource_index/packages\n'}
+[32.553971] (fire_tracker) StdoutLine: {'line': b'symbolically linking /home/willi/battle_ws/build/fire_tracker/package.xml -> /home/willi/battle_ws/install/fire_tracker/share/fire_tracker\n'}
+[32.586645] (-) TimerEvent: {}
+[32.687143] (-) TimerEvent: {}
+[32.705747] (fire_tracker) CommandEnded: {'returncode': 0}
+[32.735950] (fire_tracker) JobEnded: {'identifier': 'fire_tracker', 'rc': 0}
+[32.787259] (-) TimerEvent: {}
+[32.887619] (-) TimerEvent: {}
+[32.988021] (-) TimerEvent: {}
+[33.088450] (-) TimerEvent: {}
+[33.188858] (-) TimerEvent: {}
+[33.290068] (-) TimerEvent: {}
+[33.390448] (-) TimerEvent: {}
+[33.490867] (-) TimerEvent: {}
+[33.592171] (-) TimerEvent: {}
+[33.692623] (-) TimerEvent: {}
+[33.794708] (-) TimerEvent: {}
+[33.899180] (-) TimerEvent: {}
+[33.999578] (-) TimerEvent: {}
+[34.099949] (-) TimerEvent: {}
+[34.136883] (scan_platform) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/willi/battle_ws/build/scan_platform/build', '--no-deps', 'symlink_data'], 'cwd': '/home/willi/battle_ws/build/scan_platform', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'willi', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/willi/battle_ws/install/battle_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/willi', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/willi/battle_ws', 'TERM_PROGRAM_VERSION': '1.99.3', 'DESKTOP_SESSION': 'ubuntu-xorg', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '1895', 'BUNDLED_DEBUGPY_PATH': '/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/willi/battle_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'willi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'willi', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/willi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/willi-Lenovo-Z580:@/tmp/.ICE-unix/1655,unix/willi-Lenovo-Z580:/tmp/.ICE-unix/1655', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/79642a07_7e7c_4be8_a4ff_6849159529dd', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/willi/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-297ebcadc624d894.txt', 'LANG': 'uk_UA.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7c7c68222e.sock', 'GNOME_TERMINAL_SERVICE': ':1.97', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/willi/battle_ws/install/fire_tracker:/home/willi/battle_ws/install/battle_interfaces:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu-xorg', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/willi/battle_ws/build/scan_platform', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib::/opt/ros/humble/lib:/opt/ros/humble/lib', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/willi/battle_ws/build/scan_platform/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/willi/battle_ws/install/scan_platform/lib/python3.10/site-packages:/home/willi/battle_ws/build/fire_tracker:/home/willi/battle_ws/install/fire_tracker/lib/python3.10/site-packages:/home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/willi/battle_ws/install/battle_interfaces'}, 'shell': False}
+[34.200009] (-) TimerEvent: {}
+[34.300365] (-) TimerEvent: {}
+[34.400704] (-) TimerEvent: {}
+[34.501019] (-) TimerEvent: {}
+[34.601596] (-) TimerEvent: {}
+[34.702197] (-) TimerEvent: {}
+[34.802566] (-) TimerEvent: {}
+[34.903006] (-) TimerEvent: {}
+[34.906357] (scan_platform) StdoutLine: {'line': b'running develop\n'}
+[35.006057] (-) TimerEvent: {}
+[35.106458] (-) TimerEvent: {}
+[35.207871] (-) TimerEvent: {}
+[35.308296] (-) TimerEvent: {}
+[35.408691] (-) TimerEvent: {}
+[35.512094] (-) TimerEvent: {}
+[35.612753] (-) TimerEvent: {}
+[35.716365] (-) TimerEvent: {}
+[35.819136] (-) TimerEvent: {}
+[35.896269] (scan_platform) StdoutLine: {'line': b'running egg_info\n'}
+[35.896573] (scan_platform) StdoutLine: {'line': b'creating scan_platform.egg-info\n'}
+[35.919312] (-) TimerEvent: {}
+[35.956626] (scan_platform) StdoutLine: {'line': b'writing scan_platform.egg-info/PKG-INFO\n'}
+[35.957503] (scan_platform) StdoutLine: {'line': b'writing dependency_links to scan_platform.egg-info/dependency_links.txt\n'}
+[35.957971] (scan_platform) StdoutLine: {'line': b'writing entry points to scan_platform.egg-info/entry_points.txt\n'}
+[35.959543] (scan_platform) StdoutLine: {'line': b'writing requirements to scan_platform.egg-info/requires.txt\n'}
+[35.960064] (scan_platform) StdoutLine: {'line': b'writing top-level names to scan_platform.egg-info/top_level.txt\n'}
+[35.960287] (scan_platform) StdoutLine: {'line': b"writing manifest file 'scan_platform.egg-info/SOURCES.txt'\n"}
+[36.019415] (-) TimerEvent: {}
+[36.108151] (scan_platform) StdoutLine: {'line': b"reading manifest file 'scan_platform.egg-info/SOURCES.txt'\n"}
+[36.108600] (scan_platform) StdoutLine: {'line': b"writing manifest file 'scan_platform.egg-info/SOURCES.txt'\n"}
+[36.119543] (-) TimerEvent: {}
+[36.168537] (scan_platform) StdoutLine: {'line': b'running build_ext\n'}
+[36.168920] (scan_platform) StdoutLine: {'line': b'Creating /home/willi/battle_ws/install/scan_platform/lib/python3.10/site-packages/scan-platform.egg-link (link to .)\n'}
+[36.170787] (scan_platform) StdoutLine: {'line': b'Installing scanner_node script to /home/willi/battle_ws/install/scan_platform/lib/scan_platform\n'}
+[36.172568] (scan_platform) StdoutLine: {'line': b'\n'}
+[36.172865] (scan_platform) StdoutLine: {'line': b'Installed /home/willi/battle_ws/build/scan_platform\n'}
+[36.173081] (scan_platform) StdoutLine: {'line': b'running symlink_data\n'}
+[36.176545] (scan_platform) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/scan_platform/share/ament_index\n'}
+[36.176858] (scan_platform) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/scan_platform/share/ament_index/resource_index\n'}
+[36.177065] (scan_platform) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/scan_platform/share/ament_index/resource_index/packages\n'}
+[36.177239] (scan_platform) StdoutLine: {'line': b'symbolically linking /home/willi/battle_ws/build/scan_platform/resource/scan_platform -> /home/willi/battle_ws/install/scan_platform/share/ament_index/resource_index/packages\n'}
+[36.177416] (scan_platform) StdoutLine: {'line': b'symbolically linking /home/willi/battle_ws/build/scan_platform/package.xml -> /home/willi/battle_ws/install/scan_platform/share/scan_platform\n'}
+[36.223033] (-) TimerEvent: {}
+[36.325785] (-) TimerEvent: {}
+[36.338825] (scan_platform) CommandEnded: {'returncode': 0}
+[36.375182] (scan_platform) JobEnded: {'identifier': 'scan_platform', 'rc': 0}
+[36.378999] (-) EventReactorShutdown: {}

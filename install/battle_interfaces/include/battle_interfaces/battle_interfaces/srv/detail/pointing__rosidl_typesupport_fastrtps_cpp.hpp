@@ -1,0 +1,1 @@
+/home/willi/battle_ws/build/battle_interfaces/rosidl_typesupport_fastrtps_cpp/battle_interfaces/srv/detail/pointing__rosidl_typesupport_fastrtps_cpp.hpp
