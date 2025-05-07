@@ -9,6 +9,8 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-22.04
+    env:
+      ROS_DOMAIN_ID: 0
 
     steps:
       - name: Checkout code
@@ -19,7 +21,7 @@ jobs:
         with:
           distro: humble
 
-      - name: Install system tooling
+      - name: Install system dependencies
         run: |
           sudo apt update
           sudo apt install -y \
@@ -27,16 +29,16 @@ jobs:
             python3-empy \
             python3-lark-parser \
             python3-flake8 \
-            python3-pep257 \
             python3-pydocstyle \
+            python3-pytest \
             ros-humble-ament-lint \
-            ros-humble-ament-lint-auto
+            ros-humble-ament-lint-auto \
+            ros-humble-ament-flake8 \
+            ros-humble-ament-pep257
 
-      - name: Install Python-засоби
+      - name: Install Python tooling
         run: |
-          python3 -m pip install -U \
-            colcon-common-extensions \
-            pytest
+          python3 -m pip install --upgrade colcon-common-extensions
 
       - name: Uninstall rogue `em` package
         run: |
@@ -50,11 +52,10 @@ jobs:
       - name: Run linters
         run: |
           source /opt/ros/humble/setup.bash
-          # flake8 та pep257 тепер підхопляться з apt-пакетів
           colcon test --packages-select ament_lint_auto ament_flake8 ament_pep257
           colcon test-result --verbose
 
       - name: Run pytest
         run: |
           source /opt/ros/humble/setup.bash
-          pytest --maxfail=1 --disable-warnings -q
+          python3 -m pytest --maxfail=1 --disable-warnings -q
