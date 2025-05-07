@@ -9,6 +9,8 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-22.04
+    env:
+      ROS_DOMAIN_ID: 0
 
     steps:
       - name: Checkout code
@@ -17,7 +19,13 @@ jobs:
       - name: Setup ROS 2 Humble
         uses: ros-tooling/setup-ros@v0.4
         with:
-          rosdistro: humble
+          distro: humble
+
+      - name: Cleanup conflicting em/empy
+        run: |
+          sudo python3 -m pip uninstall -y em || true
+          sudo python3 -m pip uninstall -y empy || true
+          sudo rm -f /usr/local/bin/em /usr/local/bin/em.py || true
 
       - name: Install system dependencies
         run: |
@@ -28,29 +36,25 @@ jobs:
             ros-humble-ament-lint \
             ros-humble-ament-lint-auto
 
-      - name: Remove conflicting 'em' PyPI package
-        run: |
-          python3 -m pip uninstall -y em || true
-
       - name: Install Python tooling
         run: |
-          python3 -m pip install --user -U pytest
+          python3 -m pip install --upgrade pytest
 
-      - name: Build, lint and test
-        shell: bash
+      - name: Source ROS 2
+        run: echo "source /opt/ros/humble/setup.bash" >> $GITHUB_ENV
+
+      - name: Build workspace
         run: |
-          # підвантажуємо ROS
-          source /opt/ros/humble/setup.bash
-
-          # збірка
+          source $GITHUB_ENV
           colcon build --symlink-install --event-handlers console_cohesion+
 
-          # підвантажуємо результати збірки
+      - name: Run linters
+        run: |
           source install/setup.bash
-
-          # лінтери
           colcon test --packages-select ament_lint_auto
           colcon test-result --verbose
 
-          # pytest для Python-пакетів
+      - name: Run pytest
+        run: |
+          source install/setup.bash
           pytest --maxfail=1 --disable-warnings -q
