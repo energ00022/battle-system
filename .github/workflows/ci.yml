@@ -24,10 +24,11 @@ jobs:
           sudo apt update
           sudo apt install -y \
             python3-pip \
+            python3-empy \
             python3-colcon-common-extensions \
             ros-humble-ament-lint \
             ros-humble-ament-lint-auto
-          python3 -m pip install -U pytest
+          python3 -m pip install --user -U pytest
 
       - name: Build & Test
         shell: bash
