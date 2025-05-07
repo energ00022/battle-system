@@ -9,8 +9,6 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-22.04
-    env:
-      ROS_DOMAIN_ID: 0
 
     steps:
       - name: Checkout code
@@ -27,19 +25,22 @@ jobs:
           sudo apt install -y \
             python3-pip \
             python3-empy \
+            python3-lark-parser \
+            python3-flake8 \
+            python3-pep257 \
+            python3-pydocstyle \
             ros-humble-ament-lint \
             ros-humble-ament-lint-auto
 
-      - name: Install Python tooling
+      - name: Install Python-засоби
         run: |
           python3 -m pip install -U \
             colcon-common-extensions \
             pytest
 
-      - name: Fix empy namespace conflict
+      - name: Uninstall rogue `em` package
         run: |
           python3 -m pip uninstall -y em || true
-          python3 -m pip install -U empy
 
       - name: Build workspace
         run: |
@@ -49,7 +50,8 @@ jobs:
       - name: Run linters
         run: |
           source /opt/ros/humble/setup.bash
-          colcon test --packages-select ament_lint_auto
+          # flake8 та pep257 тепер підхопляться з apt-пакетів
+          colcon test --packages-select ament_lint_auto ament_flake8 ament_pep257
           colcon test-result --verbose
 
       - name: Run pytest
