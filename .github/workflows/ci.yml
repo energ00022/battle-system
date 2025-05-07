@@ -21,35 +21,26 @@ jobs:
         with:
           distro: humble
 
-      - name: Cleanup conflicting em/empy
-        run: |
-          sudo python3 -m pip uninstall -y em || true
-          sudo python3 -m pip uninstall -y empy || true
-          sudo rm -f /usr/local/bin/em /usr/local/bin/em.py || true
-
-      - name: Install system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y \
-            python3-empy \
-            python3-colcon-common-extensions \
-            ros-humble-ament-lint \
-            ros-humble-ament-lint-auto
-
       - name: Install Python tooling
         run: |
-          python3 -m pip install --upgrade pytest
+          sudo apt update
+          sudo apt install -y python3-pip empy    # empy потрібен для роботи colcon
+          python3 -m pip install -U \
+            colcon-common-extensions \
+            ament-lint \
+            pytest
 
       - name: Build workspace
         shell: bash
         run: |
+          cd $GITHUB_WORKSPACE         # переконаємося, що в корені репо
           source /opt/ros/humble/setup.bash
+          rm -rf build install log
           colcon build --symlink-install --event-handlers console_cohesion+
 
       - name: Run linters
         shell: bash
         run: |
-          source /opt/ros/humble/setup.bash
           source install/setup.bash
           colcon test --packages-select ament_lint_auto
           colcon test-result --verbose
@@ -57,6 +48,5 @@ jobs:
       - name: Run pytest
         shell: bash
         run: |
-          source /opt/ros/humble/setup.bash
           source install/setup.bash
           pytest --maxfail=1 --disable-warnings -q
