@@ -17,25 +17,40 @@ jobs:
       - name: Setup ROS 2 Humble
         uses: ros-tooling/setup-ros@v0.4
         with:
-          distro: humble
+          rosdistro: humble
 
-      - name: Install dependencies
+      - name: Install system dependencies
         run: |
-          sudo apt update
-          sudo apt install -y \
-            python3-pip \
+          sudo apt-get update
+          sudo apt-get install -y \
             python3-empy \
             python3-colcon-common-extensions \
             ros-humble-ament-lint \
             ros-humble-ament-lint-auto
+
+      - name: Remove conflicting 'em' PyPI package
+        run: |
+          python3 -m pip uninstall -y em || true
+
+      - name: Install Python tooling
+        run: |
           python3 -m pip install --user -U pytest
 
-      - name: Build & Test
+      - name: Build, lint and test
         shell: bash
         run: |
+          # підвантажуємо ROS
           source /opt/ros/humble/setup.bash
+
+          # збірка
           colcon build --symlink-install --event-handlers console_cohesion+
+
+          # підвантажуємо результати збірки
           source install/setup.bash
+
+          # лінтери
           colcon test --packages-select ament_lint_auto
           colcon test-result --verbose
+
+          # pytest для Python-пакетів
           pytest --maxfail=1 --disable-warnings -q
