@@ -21,32 +21,33 @@ jobs:
         with:
           distro: humble
 
-      - name: Install Python tooling
+      - name: Install system tooling
         run: |
           sudo apt update
-          sudo apt install -y python3-pip empy    # empy потрібен для роботи colcon
+          sudo apt install -y \
+            python3-pip \
+            python3-empy \
+            ros-humble-ament-lint \
+            ros-humble-ament-lint-auto
+
+      - name: Install Python tooling
+        run: |
           python3 -m pip install -U \
             colcon-common-extensions \
-            ament-lint \
             pytest
 
       - name: Build workspace
-        shell: bash
         run: |
-          cd $GITHUB_WORKSPACE         # переконаємося, що в корені репо
           source /opt/ros/humble/setup.bash
-          rm -rf build install log
           colcon build --symlink-install --event-handlers console_cohesion+
 
       - name: Run linters
-        shell: bash
         run: |
-          source install/setup.bash
+          source /opt/ros/humble/setup.bash
           colcon test --packages-select ament_lint_auto
           colcon test-result --verbose
 
       - name: Run pytest
-        shell: bash
         run: |
-          source install/setup.bash
+          source /opt/ros/humble/setup.bash
           pytest --maxfail=1 --disable-warnings -q
