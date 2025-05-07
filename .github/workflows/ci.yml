@@ -28,7 +28,7 @@ jobs:
           colcon-common-extensions \
           pytest \
           ament-lint \
-          ament_lint_auto
+          ament-lint-auto
 
     - name: Build battle_interfaces only & check interfaces
       run: |
