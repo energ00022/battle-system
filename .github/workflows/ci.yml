@@ -40,21 +40,23 @@ jobs:
         run: |
           python3 -m pip install --upgrade pytest
 
-      - name: Source ROS 2
-        run: echo "source /opt/ros/humble/setup.bash" >> $GITHUB_ENV
-
       - name: Build workspace
+        shell: bash
         run: |
-          source $GITHUB_ENV
+          source /opt/ros/humble/setup.bash
           colcon build --symlink-install --event-handlers console_cohesion+
 
       - name: Run linters
+        shell: bash
         run: |
+          source /opt/ros/humble/setup.bash
           source install/setup.bash
           colcon test --packages-select ament_lint_auto
           colcon test-result --verbose
 
       - name: Run pytest
+        shell: bash
         run: |
+          source /opt/ros/humble/setup.bash
           source install/setup.bash
           pytest --maxfail=1 --disable-warnings -q
