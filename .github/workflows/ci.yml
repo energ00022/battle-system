@@ -19,29 +19,31 @@ jobs:
       - name: Setup ROS 2 Humble
         uses: ros-tooling/setup-ros@v0.4
         with:
-          distro: humble
+          required-ros-distributions: humble   # вместо `distro`
+          install-connect: true               # поставить colcon и др.
 
-      - name: Install tooling
+      - name: Install Python tooling
         run: |
-          sudo apt update
-          sudo apt install -y python3-pip
-          python3 -m pip install -U colcon-common-extensions ament-lint ament-lint-auto pytest
-
-      - name: Source ROS 2
-        run: echo "source /opt/ros/humble/setup.bash" >> $GITHUB_ENV
+          python3 -m pip install -U \
+            colcon-common-extensions \
+            ament-lint-auto \
+            pytest
 
       - name: Build workspace
+        shell: bash
         run: |
-          source $GITHUB_ENV
+          source /opt/ros/humble/setup.bash
           colcon build --symlink-install --event-handlers console_cohesion+
 
       - name: Run linters
+        shell: bash
         run: |
-          source install/setup.bash
+          source /opt/ros/humble/setup.bash
           colcon test --packages-select ament_lint_auto
           colcon test-result --verbose
 
       - name: Run pytest
+        shell: bash
         run: |
-          source install/setup.bash
+          source /opt/ros/humble/setup.bash
           pytest --maxfail=1 --disable-warnings -q
