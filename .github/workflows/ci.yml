@@ -36,6 +36,11 @@ jobs:
             colcon-common-extensions \
             pytest
 
+      - name: Fix empy namespace conflict
+        run: |
+          python3 -m pip uninstall -y em || true
+          python3 -m pip install -U empy
+
       - name: Build workspace
         run: |
           source /opt/ros/humble/setup.bash
