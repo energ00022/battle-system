@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-22.04
+    env:
+      ROS_DOMAIN_ID: 0
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup ROS 2 Humble
+        uses: ros-tooling/setup-ros@v0.4
+        with:
+          distro: humble
+
+      - name: Install tooling
+        run: |
+          sudo apt update
+          sudo apt install -y python3-pip
+          python3 -m pip install -U colcon-common-extensions ament-lint ament-lint-auto pytest
+
+      - name: Source ROS 2
+        run: echo "source /opt/ros/humble/setup.bash" >> $GITHUB_ENV
+
+      - name: Build workspace
+        run: |
+          source $GITHUB_ENV
+          colcon build --symlink-install --event-handlers console_cohesion+
+
+      - name: Run linters
+        run: |
+          source install/setup.bash
+          colcon test --packages-select ament_lint_auto
+          colcon test-result --verbose
+
+      - name: Run pytest
+        run: |
+          source install/setup.bash
+          pytest --maxfail=1 --disable-warnings -q
