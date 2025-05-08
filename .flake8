@@ -1,0 +1,8 @@
+[flake8]
+max-line-length = 120
+select = C,E,F,W,B,B950,Q,I
+application-import-names = fire_tracker,fire_platform,battle_interfaces
+import-order-style = google
+inline-quotes = single
+multiline-quotes = single
+docstring-quotes = double
