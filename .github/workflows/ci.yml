@@ -22,7 +22,70 @@ jobs:
         uses: ros-tooling/setup-ros@0.6.1
 
       - name: Install system dependencies
-        run: |
+        run: |name: CI
+
+        on:
+          push:
+            branches: [ main ]
+          pull_request:
+            branches: [ main ]
+          workflow_dispatch:
+        
+        jobs:
+          build-and-test:
+            runs-on: ubuntu-22.04
+            env:
+              ROS_DOMAIN_ID: 0
+        
+            steps:
+              - name: Checkout code
+                uses: actions/checkout@v3
+        
+              - name: Setup ROS 2
+                uses: ros-tooling/setup-ros@0.6.1
+        
+              - name: Install system dependencies
+                run: |
+                  sudo apt update
+                  sudo apt install -y \
+                    python3-pip \
+                    python3-empy \
+                    python3-flake8 \
+                    python3-pydocstyle \
+                    ros-humble-ament-lint \
+                    ros-humble-ament-lint-auto \
+                    ros-humble-ament-flake8 \
+                    ros-humble-ament-pep257
+        
+              - name: Install Python tooling
+                run: |
+                  python3 -m pip install --upgrade \
+                    colcon-common-extensions \
+                    pytest
+        
+              - name: Remove rogue "em" package
+                run: |
+                  python3 -m pip uninstall -y em || true
+        
+              - name: Build workspace
+                shell: bash -l {0}
+                run: |
+                  source /opt/ros/humble/setup.bash
+                  colcon build --symlink-install --event-handlers console_cohesion+
+        
+              - name: Run linters
+                shell: bash -l {0}
+                run: |
+                  source /opt/ros/humble/setup.bash
+                  colcon test --packages-select ament_lint_auto ament_flake8 ament_pep257
+                  colcon test-result --verbose
+        
+              - name: Run pytest
+                shell: bash -l {0}
+                run: |
+                  source /opt/ros/humble/setup.bash
+                  python3 -m pytest --maxfail=1 --disable-warnings -q
+        
           sudo apt update
           sudo apt install -y \
             python3-pip \
