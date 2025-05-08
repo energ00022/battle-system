@@ -1,48 +1,51 @@
-name: ROS 2 CI
+name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Setup ROS 2 Humble
-      uses: ros-tooling/setup-ros@master
-      with:
-        required-ros-distributions: humble
+      - name: Setup ROS 2
+        uses: ros-tooling/setup-ros@v0.6.1
+        with:
+          required-ros-distributions: humble
 
-    - name: Install system dependencies
-      run: |
-        sudo apt update
-        sudo apt install -y \
-          python3-pip \
-          python3-empy \
-          python3-flake8 \
-          python3-pytest \
-          python3-pycodestyle \
-          ros-humble-ament-lint \
-          ros-humble-ament-lint-auto \
-          ros-humble-ament-flake8 \
-          ros-humble-ament-pep257
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y \
+            python3-pip \
+            python3-empy \
+            python3-flake8 \
+            python3-pytest \
+            python3-pycodestyle \
+            ros-humble-ament-lint \
+            ros-humble-ament-lint-auto \
+            ros-humble-ament-flake8 \
+            ros-humble-ament-pep257
 
-    - name: Install Python tooling
-      run: |
-        python3 -m pip install --upgrade pip
-        pip install colcon-common-extensions
+      - name: Install Python tools
+        run: |
+          python3 -m pip install -U \
+            colcon-common-extensions \
+            flake8 \
+            pytest
 
-    - name: Clean build, install and log directories
-      run: |
-        rm -rf build install log
+      - name: Build
+        run: |
+          source /opt/ros/humble/setup.bash
+          colcon build --event-handlers console_direct+
 
-    - name: Build workspace
-      run: |
-        source /opt/ros/humble/setup.bash
-        colcon build --event-handlers console_direct+
+      - name: Test
+        run: |
+          source /opt/ros/humble/setup.bash
+          colcon test
+          colcon test-result --verbose
