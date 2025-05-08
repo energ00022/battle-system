@@ -18,9 +18,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Setup ROS 2
-        uses: ros-tooling/setup-ros@0.6.1
+        uses: ros-tooling/setup-ros@0.7.0
         with:
-          distro: humble
+          required-ros-distributions: humble
 
       - name: Install system dependencies
         run: |
