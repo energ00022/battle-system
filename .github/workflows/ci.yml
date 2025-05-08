@@ -33,9 +33,10 @@ jobs:
             ros-humble-ament-flake8 \
             ros-humble-ament-pep257
 
-      - name: Remove conflicting 'em' package
+      - name: Remove conflicting 'em' package and file
         run: |
           python3 -m pip uninstall -y em || true
+          sudo rm -f /usr/local/bin/em.py || true
 
       - name: Install Python tooling
         run: |
