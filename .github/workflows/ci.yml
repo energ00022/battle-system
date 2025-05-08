@@ -17,8 +17,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup ROS 2
+      - name: Setup ROS 2 Humble
         uses: ros-tooling/setup-ros@0.6.1
+        with:
+          distro: humble
 
       - name: Install system dependencies
         run: |
@@ -33,17 +35,16 @@ jobs:
             ros-humble-ament-flake8 \
             ros-humble-ament-pep257
 
-      - name: Remove conflicting 'em' package and file
-        run: |
-          python3 -m pip uninstall -y em || true
-          sudo rm -f /usr/local/bin/em.py || true
-
       - name: Install Python tooling
         run: |
           python3 -m pip install --upgrade \
-            empy \
             colcon-common-extensions \
             pytest
+
+      - name: Ensure empy is installed and conflicting em is removed
+        run: |
+          python3 -m pip uninstall -y em || true
+          python3 -m pip install -U empy
 
       - name: Build workspace
         shell: bash -l {0}
