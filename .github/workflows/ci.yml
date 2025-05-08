@@ -2,19 +2,19 @@ name: ROS 2 CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-22.04
 
     steps:
-    - name: Checkout code
+    - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Setup ROS 2 Humble
+    - name: Setup ROS 2
       uses: ros-tooling/setup-ros@master
       with:
         required-ros-distributions: humble
@@ -40,22 +40,22 @@ jobs:
           flake8-blind-except \
           flake8-builtins \
           flake8-class-newline \
+          flake8-comprehensions \
           flake8-deprecated \
-          flake8-docstrings \
           flake8-import-order \
           flake8-quotes
+
+    - name: Clean workspace
+      run: |
+        rm -rf build/ install/ log/
 
     - name: Build workspace
       run: |
         source /opt/ros/humble/setup.bash
-        colcon build --event-handlers console_direct+
+        colcon build --event-handlers console_cohesion+
 
     - name: Run tests
       run: |
-        source /opt/ros/humble/setup.bash
-        colcon test --event-handlers console_direct+
-
-    - name: Test result
-      run: |
-        source /opt/ros/humble/setup.bash
+        source install/setup.bash
+        colcon test
         colcon test-result --verbose
