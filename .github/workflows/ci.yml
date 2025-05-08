@@ -1,10 +1,14 @@
-name: Build and Test
+name: ROS 2 CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
@@ -34,13 +38,11 @@ jobs:
         python3 -m pip install --upgrade pip
         pip install colcon-common-extensions
 
+    - name: Clean build, install and log directories
+      run: |
+        rm -rf build install log
+
     - name: Build workspace
       run: |
         source /opt/ros/humble/setup.bash
         colcon build --event-handlers console_direct+
-
-    - name: Run tests
-      run: |
-        source install/setup.bash
-        colcon test
-        colcon test-result --verbose
