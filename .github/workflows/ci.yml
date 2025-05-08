@@ -33,15 +33,16 @@ jobs:
             ros-humble-ament-flake8 \
             ros-humble-ament-pep257
 
+      - name: Remove conflicting 'em' package
+        run: |
+          python3 -m pip uninstall -y em || true
+
       - name: Install Python tooling
         run: |
           python3 -m pip install --upgrade \
+            empy \
             colcon-common-extensions \
             pytest
-
-      - name: Remove rogue "em" package
-        run: |
-          python3 -m pip uninstall -y em || true
 
       - name: Build workspace
         shell: bash -l {0}
