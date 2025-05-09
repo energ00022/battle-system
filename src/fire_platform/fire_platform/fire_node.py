@@ -7,35 +7,36 @@ from battle_interfaces.msg import Target
 from battle_interfaces.srv import Pointing
 
 
+
 class FireNode(Node):
     def __init__(self):
-        super().__init__("fire_node")
+        super().__init__('fire_node')
 
         self.subscription = self.create_subscription(
-            Target, "/fp1/fire_command", self.fire_callback, 10
+            Target, '/fp1/fire_command', self.fire_callback, 10
         )
 
-        self.srv = self.create_service(Pointing, "/fp1/Pointing", self.pointing_cb)
+        self.srv = self.create_service(Pointing, '/fp1/Pointing', self.pointing_cb)
 
         self.busy = False
         self.reset_timer = None
-        self.get_logger().info("🔥 Fire platform fp1 ready")
+        self.get_logger().info('🔥 Fire platform fp1 ready')
 
     def pointing_cb(self, request, response):
         if self.busy:
             response.accepted = False
-            response.remark = "busy"
+            response.remark = 'busy'
         else:
             self.busy = True
             response.accepted = True
-            response.remark = "accepted"
-            self.get_logger().info(f"✅ Accepted target {request.target.id}")
+            response.remark = 'accepted'
+            self.get_logger().info(f'✅ Accepted target {request.target.id}')
         return response
 
     def fire_callback(self, msg: Target):
         self.get_logger().info(
-            f"💥 fp1 firing at target {msg.id} "
-            f"({msg.x:.1f}, {msg.y:.1f}, {msg.z:.1f})"
+            f'💥 fp1 firing at target {msg.id} '
+            f'({msg.x:.1f}, {msg.y:.1f}, {msg.z:.1f})'
         )
 
         if self.reset_timer is not None:
@@ -47,7 +48,7 @@ class FireNode(Node):
         if self.reset_timer is not None:
             self.reset_timer.cancel()
             self.reset_timer = None
-        self.get_logger().info("🟢 fp1 is ready for a new target")
+        self.get_logger().info('🟢 fp1 is ready for a new target')
 
 
 def main(args=None):
@@ -57,5 +58,5 @@ def main(args=None):
     rclpy.shutdown()
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
