@@ -3,10 +3,10 @@
 import math
 import random
 
-from battle_interfaces.msg import AimVector, Target
-
 import rclpy
 from rclpy.node import Node
+
+from battle_interfaces.msg import AimVector, Target
 
 
 class TrackerNode(Node):
