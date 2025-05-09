@@ -12,10 +12,17 @@ class FireNode(Node):
         super().__init__('fire_node')
 
         self.subscription = self.create_subscription(
-            Target, '/fp1/fire_command', self.fire_callback, 10
+            Target,
+            '/fp1/fire_command',
+            self.fire_callback,
+            10
         )
 
-        self.srv = self.create_service(Pointing, '/fp1/Pointing', self.pointing_cb)
+        self.srv = self.create_service(
+            Pointing,
+            '/fp1/Pointing',
+            self.pointing_cb
+        )
 
         self.busy = False
         self.reset_timer = None
