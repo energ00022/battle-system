@@ -10,6 +10,7 @@ from battle_interfaces.msg import AimVector, Target
 
 
 class TrackerNode(Node):
+
     def __init__(self):
         super().__init__('tracker_node_fp3')
 
