@@ -1,9 +1,0 @@
-source;share/fire_platform_3/hook/pythonpath.ps1
-source;share/fire_platform_3/hook/pythonpath.dsv
-source;share/fire_platform_3/hook/pythonpath.sh
-source;share/fire_platform_3/hook/ament_prefix_path.ps1
-source;share/fire_platform_3/hook/ament_prefix_path.dsv
-source;share/fire_platform_3/hook/ament_prefix_path.sh
-source;../../build/fire_platform_3/share/fire_platform_3/hook/pythonpath_develop.ps1
-source;../../build/fire_platform_3/share/fire_platform_3/hook/pythonpath_develop.dsv
-source;../../build/fire_platform_3/share/fire_platform_3/hook/pythonpath_develop.sh

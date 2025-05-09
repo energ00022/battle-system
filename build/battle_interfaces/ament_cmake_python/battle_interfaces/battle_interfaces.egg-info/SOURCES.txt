@@ -1,6 +1,0 @@
-setup.py
-battle_interfaces/__init__.py
-battle_interfaces.egg-info/PKG-INFO
-battle_interfaces.egg-info/SOURCES.txt
-battle_interfaces.egg-info/dependency_links.txt
-battle_interfaces.egg-info/top_level.txt

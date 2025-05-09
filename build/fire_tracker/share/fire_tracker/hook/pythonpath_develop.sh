@@ -1,3 +1,0 @@
-# generated from colcon_core/shell/template/hook_prepend_value.sh.em
-
-_colcon_prepend_unique_value PYTHONPATH "/home/willi/battle_ws/build/fire_tracker"

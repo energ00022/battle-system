@@ -1,3 +1,0 @@
-
-bool accepted
-string remark

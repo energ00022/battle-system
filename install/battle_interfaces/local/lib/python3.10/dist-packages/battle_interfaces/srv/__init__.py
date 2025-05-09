@@ -1,1 +1,0 @@
-/home/willi/battle_ws/build/battle_interfaces/rosidl_generator_py/battle_interfaces/srv/__init__.py

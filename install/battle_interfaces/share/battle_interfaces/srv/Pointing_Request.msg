@@ -1,1 +1,0 @@
-/home/willi/battle_ws/build/battle_interfaces/rosidl_cmake/srv/Pointing_Request.msg
