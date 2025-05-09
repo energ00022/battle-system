@@ -1,0 +1,3 @@
+[console_scripts]
+fire_node_3 = fire_platform_3.fire_node_3:main
+

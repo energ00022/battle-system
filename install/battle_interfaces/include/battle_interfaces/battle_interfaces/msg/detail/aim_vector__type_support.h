@@ -1,0 +1,1 @@
+/home/willi/battle_ws/build/battle_interfaces/rosidl_generator_c/battle_interfaces/msg/detail/aim_vector__type_support.h

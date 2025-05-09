@@ -1,5 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000344] (fire_platform) JobQueued: {'identifier': 'fire_platform', 'dependencies': OrderedDict([('battle_interfaces', '/home/willi/battle_ws/install/battle_interfaces'), ('fire_platform', '/home/willi/battle_ws/install/fire_platform')])}
-[0.000487] (fire_platform) JobStarted: {'identifier': 'fire_platform'}
-[0.013001] (fire_platform) JobEnded: {'identifier': 'fire_platform', 'rc': 1}
-[0.025203] (-) EventReactorShutdown: {}

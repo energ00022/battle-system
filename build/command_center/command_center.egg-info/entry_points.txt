@@ -1,0 +1,3 @@
+[console_scripts]
+commander_node = command_center.commander_node:main
+

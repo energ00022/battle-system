@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
+
 import rclpy
 from rclpy.node import Node
 from battle_interfaces.msg import TargetArray, Target
 from battle_interfaces.srv import Pointing
+
 
 class CommanderNode(Node):
     def __init__(self):
@@ -61,16 +63,18 @@ class CommanderNode(Node):
                 self.fire_publishers[ns].publish(target)
                 return
 
-        # якщо жодна не прийняла    
+        # якщо жодна не прийняла
         self.get_logger().warn(
             f'❌ No platform accepted target {target.id}'
         )
+
 
 def main(args=None):
     rclpy.init(args=args)
     node = CommanderNode()
     rclpy.spin(node)
     rclpy.shutdown()
+
 
 if __name__ == '__main__':
     main()

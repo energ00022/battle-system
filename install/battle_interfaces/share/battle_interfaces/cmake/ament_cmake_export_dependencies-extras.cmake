@@ -1,0 +1,1 @@
+/home/willi/battle_ws/build/battle_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake

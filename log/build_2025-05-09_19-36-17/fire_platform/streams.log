@@ -1,0 +1,24 @@
+[2.844s] Invoking command in '/home/willi/battle_ws/build/fire_platform': AMENT_PREFIX_PATH=/home/willi/battle_ws/install/battle_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/willi/battle_ws/install/battle_interfaces LD_LIBRARY_PATH=/home/willi/battle_ws/install/battle_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/willi/battle_ws/build/fire_platform/prefix_override:/home/willi/battle_ws/.ci-test-env/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/willi/battle_ws/install/fire_platform/lib/python3.10/site-packages:/home/willi/battle_ws/install/battle_interfaces/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.ci-test-env) /home/willi/battle_ws/.ci-test-env/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/willi/battle_ws/build/fire_platform/build --no-deps symlink_data
+[3.770s] running develop
+[4.526s] running egg_info
+[4.534s] creating fire_platform.egg-info
+[4.535s] writing fire_platform.egg-info/PKG-INFO
+[4.535s] writing dependency_links to fire_platform.egg-info/dependency_links.txt
+[4.535s] writing entry points to fire_platform.egg-info/entry_points.txt
+[4.535s] writing requirements to fire_platform.egg-info/requires.txt
+[4.535s] writing top-level names to fire_platform.egg-info/top_level.txt
+[4.555s] writing manifest file 'fire_platform.egg-info/SOURCES.txt'
+[4.569s] reading manifest file 'fire_platform.egg-info/SOURCES.txt'
+[4.581s] writing manifest file 'fire_platform.egg-info/SOURCES.txt'
+[4.597s] running build_ext
+[4.602s] Creating /home/willi/battle_ws/install/fire_platform/lib/python3.10/site-packages/fire-platform.egg-link (link to .)
+[4.613s] Installing fire_node script to /home/willi/battle_ws/install/fire_platform/lib/fire_platform
+[4.614s] 
+[4.615s] Installed /home/willi/battle_ws/build/fire_platform
+[4.615s] running symlink_data
+[4.615s] creating /home/willi/battle_ws/install/fire_platform/share/ament_index
+[4.615s] creating /home/willi/battle_ws/install/fire_platform/share/ament_index/resource_index
+[4.616s] creating /home/willi/battle_ws/install/fire_platform/share/ament_index/resource_index/packages
+[4.616s] symbolically linking /home/willi/battle_ws/build/fire_platform/resource/fire_platform -> /home/willi/battle_ws/install/fire_platform/share/ament_index/resource_index/packages
+[4.616s] symbolically linking /home/willi/battle_ws/build/fire_platform/package.xml -> /home/willi/battle_ws/install/fire_platform/share/fire_platform
+[5.234s] Invoked command in '/home/willi/battle_ws/build/fire_platform' returned '0': AMENT_PREFIX_PATH=/home/willi/battle_ws/install/battle_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/willi/battle_ws/install/battle_interfaces LD_LIBRARY_PATH=/home/willi/battle_ws/install/battle_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/willi/battle_ws/build/fire_platform/prefix_override:/home/willi/battle_ws/.ci-test-env/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/willi/battle_ws/install/fire_platform/lib/python3.10/site-packages:/home/willi/battle_ws/install/battle_interfaces/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.ci-test-env) /home/willi/battle_ws/.ci-test-env/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/willi/battle_ws/build/fire_platform/build --no-deps symlink_data

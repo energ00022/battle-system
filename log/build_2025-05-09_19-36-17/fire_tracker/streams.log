@@ -1,0 +1,25 @@
+[2.950s] Invoking command in '/home/willi/battle_ws/build/fire_tracker': AMENT_PREFIX_PATH=/home/willi/battle_ws/install/battle_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/willi/battle_ws/install/battle_interfaces LD_LIBRARY_PATH=/home/willi/battle_ws/install/battle_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/willi/battle_ws/build/fire_tracker/prefix_override:/home/willi/battle_ws/.ci-test-env/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/willi/battle_ws/install/fire_tracker/lib/python3.10/site-packages:/home/willi/battle_ws/install/battle_interfaces/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.ci-test-env) /home/willi/battle_ws/.ci-test-env/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/willi/battle_ws/build/fire_tracker/build --no-deps symlink_data
+[3.654s] running develop
+[4.003s] running egg_info
+[4.004s] creating fire_tracker.egg-info
+[4.005s] writing fire_tracker.egg-info/PKG-INFO
+[4.006s] writing dependency_links to fire_tracker.egg-info/dependency_links.txt
+[4.007s] writing entry points to fire_tracker.egg-info/entry_points.txt
+[4.007s] writing requirements to fire_tracker.egg-info/requires.txt
+[4.008s] writing top-level names to fire_tracker.egg-info/top_level.txt
+[4.009s] writing manifest file 'fire_tracker.egg-info/SOURCES.txt'
+[4.014s] reading manifest file 'fire_tracker.egg-info/SOURCES.txt'
+[4.016s] writing manifest file 'fire_tracker.egg-info/SOURCES.txt'
+[4.020s] running build_ext
+[4.020s] Creating /home/willi/battle_ws/install/fire_tracker/lib/python3.10/site-packages/fire-tracker.egg-link (link to .)
+[4.023s] Installing tracker_node script to /home/willi/battle_ws/install/fire_tracker/lib/fire_tracker
+[4.025s] Installing tracker_node_fp3 script to /home/willi/battle_ws/install/fire_tracker/lib/fire_tracker
+[4.025s] 
+[4.027s] Installed /home/willi/battle_ws/build/fire_tracker
+[4.027s] running symlink_data
+[4.028s] creating /home/willi/battle_ws/install/fire_tracker/share/ament_index
+[4.028s] creating /home/willi/battle_ws/install/fire_tracker/share/ament_index/resource_index
+[4.029s] creating /home/willi/battle_ws/install/fire_tracker/share/ament_index/resource_index/packages
+[4.029s] symbolically linking /home/willi/battle_ws/build/fire_tracker/resource/fire_tracker -> /home/willi/battle_ws/install/fire_tracker/share/ament_index/resource_index/packages
+[4.030s] symbolically linking /home/willi/battle_ws/build/fire_tracker/package.xml -> /home/willi/battle_ws/install/fire_tracker/share/fire_tracker
+[4.126s] Invoked command in '/home/willi/battle_ws/build/fire_tracker' returned '0': AMENT_PREFIX_PATH=/home/willi/battle_ws/install/battle_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/willi/battle_ws/install/battle_interfaces LD_LIBRARY_PATH=/home/willi/battle_ws/install/battle_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/willi/battle_ws/build/fire_tracker/prefix_override:/home/willi/battle_ws/.ci-test-env/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/willi/battle_ws/install/fire_tracker/lib/python3.10/site-packages:/home/willi/battle_ws/install/battle_interfaces/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.ci-test-env) /home/willi/battle_ws/.ci-test-env/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/willi/battle_ws/build/fire_tracker/build --no-deps symlink_data

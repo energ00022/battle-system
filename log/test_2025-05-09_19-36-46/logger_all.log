@@ -1,0 +1,145 @@
+[0.653s] DEBUG:colcon:Command line arguments: ['/home/willi/battle_ws/.ci-test-env/bin/colcon', 'test', '--packages-select', 'command_center']
+[0.653s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='test', build_base='build', install_base='install', merge_install=False, test_result_base=None, retest_until_fail=0, retest_until_pass=0, abort_on_error=False, return_code_on_test_failure=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['command_center'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, ctest_args=None, python_testing=None, pytest_args=None, pytest_with_coverage=False, unittest_args=None, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x785d0d81a380>, verb_extension=<colcon_core.verb.test.TestVerb object at 0x785d0d8193c0>, main=<bound method TestVerb.main of <colcon_core.verb.test.TestVerb object at 0x785d0d8193c0>>)
+[0.966s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.967s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.967s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.967s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.967s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.967s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.968s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/willi/battle_ws'
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.968s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.969s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.035s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.036s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.037s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.038s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(src/battle_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(src/battle_interfaces) by extension 'ignore'
+[1.039s] Level 1:colcon.colcon_core.package_identification:_identify(src/battle_interfaces) by extension 'ignore_ament_install'
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(src/battle_interfaces) by extensions ['colcon_pkg']
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(src/battle_interfaces) by extension 'colcon_pkg'
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(src/battle_interfaces) by extensions ['colcon_meta']
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(src/battle_interfaces) by extension 'colcon_meta'
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(src/battle_interfaces) by extensions ['ros']
+[1.040s] Level 1:colcon.colcon_core.package_identification:_identify(src/battle_interfaces) by extension 'ros'
+[1.046s] DEBUG:colcon.colcon_core.package_identification:Package 'src/battle_interfaces' with type 'ros.ament_cmake' and name 'battle_interfaces'
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(src/command_center) by extensions ['ignore', 'ignore_ament_install']
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(src/command_center) by extension 'ignore'
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(src/command_center) by extension 'ignore_ament_install'
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(src/command_center) by extensions ['colcon_pkg']
+[1.048s] Level 1:colcon.colcon_core.package_identification:_identify(src/command_center) by extension 'colcon_pkg'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/command_center) by extensions ['colcon_meta']
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/command_center) by extension 'colcon_meta'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/command_center) by extensions ['ros']
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(src/command_center) by extension 'ros'
+[1.051s] DEBUG:colcon.colcon_core.package_identification:Package 'src/command_center' with type 'ros.ament_python' and name 'command_center'
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_platform) by extensions ['ignore', 'ignore_ament_install']
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_platform) by extension 'ignore'
+[1.052s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_platform) by extension 'ignore_ament_install'
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_platform) by extensions ['colcon_pkg']
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_platform) by extension 'colcon_pkg'
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_platform) by extensions ['colcon_meta']
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_platform) by extension 'colcon_meta'
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_platform) by extensions ['ros']
+[1.053s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_platform) by extension 'ros'
+[1.055s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fire_platform' with type 'ros.ament_python' and name 'fire_platform'
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_platform_3) by extensions ['ignore', 'ignore_ament_install']
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_platform_3) by extension 'ignore'
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_platform_3) by extension 'ignore_ament_install'
+[1.056s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_platform_3) by extensions ['colcon_pkg']
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_platform_3) by extension 'colcon_pkg'
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_platform_3) by extensions ['colcon_meta']
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_platform_3) by extension 'colcon_meta'
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_platform_3) by extensions ['ros']
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_platform_3) by extension 'ros'
+[1.059s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fire_platform_3' with type 'ros.ament_python' and name 'fire_platform_3'
+[1.059s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_tracker) by extensions ['ignore', 'ignore_ament_install']
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_tracker) by extension 'ignore'
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_tracker) by extension 'ignore_ament_install'
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_tracker) by extensions ['colcon_pkg']
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_tracker) by extension 'colcon_pkg'
+[1.060s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_tracker) by extensions ['colcon_meta']
+[1.061s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_tracker) by extension 'colcon_meta'
+[1.061s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_tracker) by extensions ['ros']
+[1.061s] Level 1:colcon.colcon_core.package_identification:_identify(src/fire_tracker) by extension 'ros'
+[1.064s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fire_tracker' with type 'ros.ament_python' and name 'fire_tracker'
+[1.064s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_platform) by extensions ['ignore', 'ignore_ament_install']
+[1.065s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_platform) by extension 'ignore'
+[1.065s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_platform) by extension 'ignore_ament_install'
+[1.065s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_platform) by extensions ['colcon_pkg']
+[1.065s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_platform) by extension 'colcon_pkg'
+[1.065s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_platform) by extensions ['colcon_meta']
+[1.065s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_platform) by extension 'colcon_meta'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_platform) by extensions ['ros']
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(src/scan_platform) by extension 'ros'
+[1.068s] DEBUG:colcon.colcon_core.package_identification:Package 'src/scan_platform' with type 'ros.ament_python' and name 'scan_platform'
+[1.069s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.069s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.069s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.069s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.069s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.075s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'battle_interfaces' in 'src/battle_interfaces'
+[1.076s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'fire_platform' in 'src/fire_platform'
+[1.076s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'fire_platform_3' in 'src/fire_platform_3'
+[1.076s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'fire_tracker' in 'src/fire_tracker'
+[1.076s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'scan_platform' in 'src/scan_platform'
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'command_center' test argument 'ctest_args' from command line to 'None'
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'command_center' test argument 'python_testing' from command line to 'None'
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'command_center' test argument 'pytest_args' from command line to 'None'
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'command_center' test argument 'pytest_with_coverage' from command line to 'False'
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'command_center' test argument 'unittest_args' from command line to 'None'
+[1.079s] Level 5:colcon.colcon_core.verb:set package 'command_center' test argument 'retest_until_pass' from command line to '0'
+[1.079s] Level 5:colcon.colcon_core.verb:set package 'command_center' test argument 'retest_until_fail' from command line to '0'
+[1.079s] DEBUG:colcon.colcon_core.verb.test:Testing package 'command_center' with the following arguments: {'build_base': '/home/willi/battle_ws/build/command_center', 'ctest_args': None, 'install_base': '/home/willi/battle_ws/install/command_center', 'path': '/home/willi/battle_ws/src/command_center', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[1.079s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.083s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.084s] INFO:colcon.colcon_ros.task.ament_python.test:Testing ROS package in '/home/willi/battle_ws/src/command_center' with build type'ament_python'
+[1.084s] INFO:colcon.colcon_core.task.python.test:Testing Python package in '/home/willi/battle_ws/src/command_center'
+[1.088s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.088s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.088s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.940s] Level 1:colcon.colcon_core.task.python.test:test() by extension 'pytest'
+[1.941s] Level 1:colcon.colcon_core.task.python.test:test() by extension 'setuppy_test'
+[1.941s] Level 1:colcon.colcon_core.task.python.test:test.step() by extension 'setuppy_test'
+[1.950s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/willi/battle_ws/src/command_center': AMENT_PREFIX_PATH=/home/willi/battle_ws/install/command_center:/home/willi/battle_ws/install/battle_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/willi/battle_ws/install/battle_interfaces LD_LIBRARY_PATH=/home/willi/battle_ws/install/battle_interfaces/lib:${LD_LIBRARY_PATH} PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/willi/battle_ws/build/command_center:/home/willi/battle_ws/install/command_center/lib/python3.10/site-packages:/home/willi/battle_ws/install/battle_interfaces/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.ci-test-env) /home/willi/battle_ws/.ci-test-env/bin/python3 -m unittest -v
+[2.086s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.087s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.087s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.087s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.087s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/willi/battle_ws/src/command_center' returned '0': AMENT_PREFIX_PATH=/home/willi/battle_ws/install/command_center:/home/willi/battle_ws/install/battle_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/willi/battle_ws/install/battle_interfaces LD_LIBRARY_PATH=/home/willi/battle_ws/install/battle_interfaces/lib:${LD_LIBRARY_PATH} PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/willi/battle_ws/build/command_center:/home/willi/battle_ws/install/command_center/lib/python3.10/site-packages:/home/willi/battle_ws/install/battle_interfaces/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.ci-test-env) /home/willi/battle_ws/.ci-test-env/bin/python3 -m unittest -v
+[2.090s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify2': 'notify2' not found
+[2.091s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.091s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.091s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify_send'
+[2.152s] DEBUG:colcon.colcon_core.event_reactor:joined thread

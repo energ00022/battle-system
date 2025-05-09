@@ -1,0 +1,1 @@
+/home/willi/battle_ws/build/battle_interfaces/ament_cmake_core/battle_interfacesConfig.cmake

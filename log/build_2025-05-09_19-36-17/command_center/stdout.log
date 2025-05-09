@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating command_center.egg-info
+writing command_center.egg-info/PKG-INFO
+writing dependency_links to command_center.egg-info/dependency_links.txt
+writing entry points to command_center.egg-info/entry_points.txt
+writing requirements to command_center.egg-info/requires.txt
+writing top-level names to command_center.egg-info/top_level.txt
+writing manifest file 'command_center.egg-info/SOURCES.txt'
+reading manifest file 'command_center.egg-info/SOURCES.txt'
+writing manifest file 'command_center.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/willi/battle_ws/install/command_center/lib/python3.10/site-packages/command-center.egg-link (link to .)
+Installing commander_node script to /home/willi/battle_ws/install/command_center/lib/command_center
+
+Installed /home/willi/battle_ws/build/command_center
+running symlink_data
+creating /home/willi/battle_ws/install/command_center/share/ament_index
+creating /home/willi/battle_ws/install/command_center/share/ament_index/resource_index
+creating /home/willi/battle_ws/install/command_center/share/ament_index/resource_index/packages
+symbolically linking /home/willi/battle_ws/build/command_center/resource/command_center -> /home/willi/battle_ws/install/command_center/share/ament_index/resource_index/packages
+symbolically linking /home/willi/battle_ws/build/command_center/package.xml -> /home/willi/battle_ws/install/command_center/share/command_center
