@@ -35,20 +35,17 @@ class TrackerNode(Node):
             return
 
         vec = AimVector()
-        vec.yaw = math.atan2(self.current_goal.y, self.current_goal.x) + random.uniform(
-            -0.05, 0.05
-        )
+        vec.yaw = math.atan2(self.current_goal.y, self.current_goal.x) + random.uniform(-0.05, 0.05)
         vec.pitch = math.atan2(
-            self.current_goal.z, math.hypot(self.current_goal.x, self.current_goal.y)
+            self.current_goal.z,
+            math.hypot(self.current_goal.x, self.current_goal.y)
         ) + random.uniform(-0.05, 0.05)
         vec.roll = 0.0
         self.aim_pub.publish(vec)
 
         if not self.ready and random.random() < 0.07:
             self.ready = True
-            self.get_logger().info(
-                f'✅ Aim stabilised for target {self.current_goal.id}'
-            )
+            self.get_logger().info(f'✅ Aim stabilised for target {self.current_goal.id}')
 
 
 def main(args=None):
