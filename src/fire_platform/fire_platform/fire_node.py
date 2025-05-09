@@ -7,7 +7,6 @@ from battle_interfaces.msg import Target
 from battle_interfaces.srv import Pointing
 
 
-
 class FireNode(Node):
     def __init__(self):
         super().__init__('fire_node')
