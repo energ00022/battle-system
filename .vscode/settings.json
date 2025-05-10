@@ -3,7 +3,7 @@
     "editor.formatOnSave": true,
     "python.formatting.provider": "black",
     "editor.codeActionsOnSave": {
-        "source.organizeImports": true
+        "source.organizeImports": "explicit"
     },
     // 🧠 Додаткові шляхи для ROS 2
     "python.autoComplete.extraPaths": [
@@ -26,14 +26,14 @@
         "/opt/ros/humble/lib/python3.10/site-packages",
         "/opt/ros/humble/local/lib/python3.10/dist-packages"
     ],
-    // 🔍 Параметри CMake (для автодоповнення .cpp/.h)
+    // 🔍 CMake (для .cpp/.h автодоповнення)
     "cmake.sourceDirectory": "/home/willi/battle_ws/src/battle_interfaces",
-    // 🔎 Параметри linting/flake8
+    // 🧪 flake8 linting
     "python.linting.enabled": true,
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Path": "flake8",
     "python.linting.lintOnSave": true,
-    // 🌟 Візуальні покращення
+    // 🌟 Додаткові покращення
     "editor.renderWhitespace": "all",
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true
