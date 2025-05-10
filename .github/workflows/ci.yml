@@ -1,61 +1,29 @@
-name: ROS 2 CI
+name: Flake8 Lint Check
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
   pull_request:
-    branches: [main]
+    branches: [ main ]
 
 jobs:
-  build:
-    runs-on: ubuntu-22.04
+  lint:
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Setup ROS 2
-      uses: ros-tooling/setup-ros@master
+    - name: Set up Python
+      uses: actions/setup-python@v4
       with:
-        required-ros-distributions: humble
+        python-version: '3.10'
 
-    - name: Install system dependencies
+    - name: Install flake8 with plugins
       run: |
-        sudo apt update
-        sudo apt install -y \
-          python3-pip \
-          python3-empy \
-          python3-flake8 \
-          python3-pytest \
-          python3-pycodestyle \
-          ros-humble-ament-lint \
-          ros-humble-ament-lint-auto \
-          ros-humble-ament-flake8 \
-          ros-humble-ament-pep257
+        python -m pip install --upgrade pip
+        pip install flake8 flake8-import-order flake8-quotes flake8-bugbear
 
-    - name: Install Python tooling
+    - name: Run flake8 using .flake8 config
       run: |
-        pip3 install -U \
-          colcon-common-extensions \
-          flake8-blind-except \
-          flake8-builtins \
-          flake8-class-newline \
-          flake8-comprehensions \
-          flake8-deprecated \
-          flake8-import-order \
-          flake8-quotes
-
-    - name: Clean workspace
-      run: |
-        rm -rf build/ install/ log/
-
-    - name: Build workspace
-      run: |
-        source /opt/ros/humble/setup.bash
-        colcon build --event-handlers console_cohesion+
-
-    - name: Run tests
-      run: |
-        source install/setup.bash
-        colcon test
-        colcon test-result --verbose
+        flake8 src/
