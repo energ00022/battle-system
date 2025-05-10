@@ -2,7 +2,8 @@
 
 import rclpy
 from rclpy.node import Node
-from battle_interfaces.msg import TargetArray, Target
+
+from battle_interfaces.msg import Target, TargetArray
 from battle_interfaces.srv import Pointing
 
 

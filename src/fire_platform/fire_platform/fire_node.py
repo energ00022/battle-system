@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 
-from battle_interfaces.msg import Target
-from battle_interfaces.srv import Pointing
-
-
 import rclpy
 from rclpy.node import Node
+
+from battle_interfaces.msg import Target
+from battle_interfaces.srv import Pointing
 
 
 class FireNode(Node):

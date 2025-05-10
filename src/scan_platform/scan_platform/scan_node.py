@@ -1,11 +1,14 @@
-import rclpy
-from rclpy.node import Node
-
-from battle_interfaces.msg import Target, TargetArray      # ← нові типи
-from builtin_interfaces.msg import Time                    # для stamp
+#!/usr/bin/env python3
 
 import random
 import time
+
+import rclpy
+from rclpy.node import Node
+
+from battle_interfaces.msg import Target, TargetArray
+
+from builtin_interfaces.msg import Time
 
 
 class ScanNode(Node):                                      # назва на твій смак
