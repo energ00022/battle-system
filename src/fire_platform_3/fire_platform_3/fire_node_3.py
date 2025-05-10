@@ -10,32 +10,27 @@ class FireNode3(Node):
     """Бойовий модуль fp3: приймає Pointing‑сервіс і fire_command."""
 
     def __init__(self):
-        super().__init__('fire_node_3')
+        super().__init__("fire_node_3")
 
         # ---------------------------------------------------------------
         # 1. Підписка на топік fire_command для fp3
         # ---------------------------------------------------------------
         self.subscription = self.create_subscription(
-            Target,
-            '/fp3/fire_command',           # ← власний топік
-            self.fire_callback,
-            10
+            Target, "/fp3/fire_command", self.fire_callback, 10  # ← власний топік
         )
 
         # ---------------------------------------------------------------
         # 2. Сервер сервісу Pointing
         # ---------------------------------------------------------------
         self.pointing_srv = self.create_service(
-            Pointing,
-            '/fp3/Pointing',               # ← власний сервіс
-            self.pointing_callback
+            Pointing, "/fp3/Pointing", self.pointing_callback  # ← власний сервіс
         )
 
         # Статус зайнятості
         self.busy = False
-        self.reset_timer = None            # для таймера one‑shot
+        self.reset_timer = None  # для таймера one‑shot
 
-        self.get_logger().info('🔥 Fire platform fp3 ready')
+        self.get_logger().info("🔥 Fire platform fp3 ready")
 
     # ------------------------------------------------------------------
     #   Pointing service callback
@@ -44,13 +39,12 @@ class FireNode3(Node):
         """Приймає чи відхиляє запропоновану ціль."""
         if self.busy:
             response.accepted = False
-            response.remark = 'busy'
+            response.remark = "busy"
         else:
             self.busy = True
             response.accepted = True
-            response.remark = 'accepted'
-            self.get_logger().info(
-                f'✅ [FP3] Accepted target {request.target.id}')
+            response.remark = "accepted"
+            self.get_logger().info(f"✅ [FP3] Accepted target {request.target.id}")
         return response
 
     # ------------------------------------------------------------------
@@ -59,16 +53,15 @@ class FireNode3(Node):
     def fire_callback(self, msg: Target):
         """Імітуємо постріл і через 3 с звільняємо платформу."""
         self.get_logger().info(
-            f'💥 [FP3] Firing at target {msg.id} '
-            f'({msg.x:.1f}, {msg.y:.1f}, {msg.z:.1f})'
+            f"💥 [FP3] Firing at target {msg.id} "
+            f"({msg.x:.1f}, {msg.y:.1f}, {msg.z:.1f})"
         )
 
         # Створюємо/перезапускаємо таймер one‑shot 3 с
         if self.reset_timer is not None:
             self.reset_timer.cancel()
 
-        self.reset_timer = self.create_timer(
-            3.0, self._reset_busy_once)
+        self.reset_timer = self.create_timer(3.0, self._reset_busy_once)
 
     # ------------------------------------------------------------------
     #   допоміжний метод для таймера
@@ -78,7 +71,7 @@ class FireNode3(Node):
         if self.reset_timer is not None:
             self.reset_timer.cancel()
             self.reset_timer = None
-        self.get_logger().info('🟢 [FP3] Ready for a new target')
+        self.get_logger().info("🟢 [FP3] Ready for a new target")
 
 
 # ----------------------------------------------------------------------
@@ -89,5 +82,5 @@ def main(args=None):
     rclpy.shutdown()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

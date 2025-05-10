@@ -4,27 +4,24 @@ import random
 import time
 
 import rclpy
+from builtin_interfaces.msg import Time
 from rclpy.node import Node
 
 from battle_interfaces.msg import Target, TargetArray
 
-from builtin_interfaces.msg import Time
 
-
-class ScanNode(Node):                                      # назва на твій смак
+class ScanNode(Node):  # назва на твій смак
     def __init__(self):
-        super().__init__('scanner_node')                    # ім’я вузла не міняємо
+        super().__init__("scanner_node")  # ім’я вузла не міняємо
         self.publisher_ = self.create_publisher(
-            TargetArray,
-            '/target_array',                               # ← новий топік
-            10
+            TargetArray, "/target_array", 10  # ← новий топік
         )
         self.timer = self.create_timer(1.0, self.publish_targets)
-        self.get_logger().info('Scanner node started (TargetArray mode)')
+        self.get_logger().info("Scanner node started (TargetArray mode)")
 
     def publish_targets(self):
         msg = TargetArray()
-        msg.frame_id = 'world'
+        msg.frame_id = "world"
 
         # часова мітка
         now = self.get_clock().now()
@@ -41,11 +38,11 @@ class ScanNode(Node):                                      # назва на т�
             tgt.y = random.uniform(0.0, 10.0)
             tgt.z = random.uniform(0.0, 5.0)
             tgt.confidence = random.uniform(0.6, 0.95)
-            tgt.frame_id = 'world'
+            tgt.frame_id = "world"
             msg.targets.append(tgt)
 
         self.publisher_.publish(msg)
-        self.get_logger().info(f'📡 Published {count} target(s)')
+        self.get_logger().info(f"📡 Published {count} target(s)")
 
 
 def main(args=None):
@@ -55,5 +52,5 @@ def main(args=None):
     rclpy.shutdown()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

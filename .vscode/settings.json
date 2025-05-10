@@ -1,5 +1,12 @@
 {
-    // ---------------------- Python PATHs for ROS 2 ----------------------
+    // 🔧 Форматування при збереженні
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+
+    // 🧠 Додаткові шляхи для ROS 2
     "python.autoComplete.extraPaths": [
         "/home/willi/battle_ws/build/scan_platform",
         "/home/willi/battle_ws/install/scan_platform/lib/python3.10/site-packages",
@@ -20,25 +27,18 @@
         "/opt/ros/humble/lib/python3.10/site-packages",
         "/opt/ros/humble/local/lib/python3.10/dist-packages"
     ],
+
+    // 🔧 Для .cpp/hpp проекту, якщо CMake
     "cmake.sourceDirectory": "/home/willi/battle_ws/src/battle_interfaces",
 
-    // ---------------------- Flake8 and linting ----------------------
+    // 🔍 Стилістичні налаштування
     "python.linting.enabled": true,
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Path": "flake8",
     "python.linting.lintOnSave": true,
 
-    // ---------------------- Style consistency ----------------------
+    // 🌟 Інше
     "editor.renderWhitespace": "all",
-    "editor.formatOnSave": false,
     "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewline": true,
-
-    // ---------------------- Optional: auto import sorting ----------------------
-    "editor.codeActionsOnSave": {
-        "source.organizeImports": "explicit"
-    }
-
-    // ---------------------- Python interpreter path (опційно) ----------------------
-    // "python.defaultInterpreterPath": "/path/to/your/venv/bin/python"
+    "files.insertFinalNewline": true
 }
