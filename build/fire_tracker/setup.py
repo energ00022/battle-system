@@ -1,1 +1,0 @@
-/home/willi/battle_ws/src/fire_tracker/setup.py

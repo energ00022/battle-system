@@ -1,56 +1,39 @@
 #!/usr/bin/env python3
-
-import random
+import signal
+import sys
 import time
 
 import rclpy
-from builtin_interfaces.msg import Time
 from rclpy.node import Node
 
-from battle_interfaces.msg import Target, TargetArray
 
+class ScanNode(Node):
+    """Сканирующий узел LiDAR-платформы."""
 
-class ScanNode(Node):  # назва на твій смак
     def __init__(self):
-        super().__init__("scanner_node")  # ім’я вузла не міняємо
-        self.publisher_ = self.create_publisher(
-            TargetArray, "/target_array", 10  # ← новий топік
-        )
-        self.timer = self.create_timer(1.0, self.publish_targets)
-        self.get_logger().info("Scanner node started (TargetArray mode)")
-
-    def publish_targets(self):
-        msg = TargetArray()
-        msg.frame_id = "world"
-
-        # часова мітка
-        now = self.get_clock().now()
-        sec, nsec = now.seconds_nanoseconds()
-        msg.stamp = Time(sec=sec, nanosec=nsec)
-
-        # емітуємо 1‑3 цілі
-        count = random.randint(1, 3)
-        base_id = int(time.time() * 1000) % 100000
-        for i in range(count):
-            tgt = Target()
-            tgt.id = base_id + i
-            tgt.x = random.uniform(0.0, 10.0)
-            tgt.y = random.uniform(0.0, 10.0)
-            tgt.z = random.uniform(0.0, 5.0)
-            tgt.confidence = random.uniform(0.6, 0.95)
-            tgt.frame_id = "world"
-            msg.targets.append(tgt)
-
-        self.publisher_.publish(msg)
-        self.get_logger().info(f"📡 Published {count} target(s)")
+        super().__init__("scan_node")
+        self.get_logger().info("🔍 Scan node started")
 
 
 def main(args=None):
     rclpy.init(args=args)
     node = ScanNode()
-    rclpy.spin(node)
-    rclpy.shutdown()
+
+    # Обробник сигналу SIGINT → викликає shutdown
+    def shutdown_handler(signum, frame):
+        node.get_logger().info("👋 SIGINT received — shutting down cleanly")
+        rclpy.shutdown()
+
+    signal.signal(signal.SIGINT, shutdown_handler)
+
+    try:
+        while rclpy.ok():
+            rclpy.spin_once(node, timeout_sec=0.1)
+            time.sleep(0.01)
+    finally:
+        node.destroy_node()
+        return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

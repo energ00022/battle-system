@@ -1,1 +1,0 @@
-/home/willi/battle_ws/src/fire_platform_3/setup.py

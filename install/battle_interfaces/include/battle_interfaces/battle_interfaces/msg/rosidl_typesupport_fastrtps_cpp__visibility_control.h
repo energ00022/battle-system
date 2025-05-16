@@ -1,1 +1,0 @@
-/home/willi/battle_ws/build/battle_interfaces/rosidl_typesupport_fastrtps_cpp/battle_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h

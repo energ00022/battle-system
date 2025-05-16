@@ -1,9 +1,0 @@
-{
-  "package_name": "battle_interfaces",
-  "non_idl_tuples": [
-    "/home/willi/battle_ws/src/battle_interfaces:msg/Target.msg",
-    "/home/willi/battle_ws/src/battle_interfaces:msg/TargetArray.msg",
-    "/home/willi/battle_ws/src/battle_interfaces:msg/AimVector.msg",
-    "/home/willi/battle_ws/src/battle_interfaces:srv/Pointing.srv"
-  ]
-}

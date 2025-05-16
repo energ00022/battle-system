@@ -1,0 +1,101 @@
+[0.000000] (-) TimerEvent: {}
+[0.000713] (-) JobUnselected: {'identifier': 'battle_interfaces'}
+[0.001000] (-) JobUnselected: {'identifier': 'central_hub'}
+[0.001165] (-) JobUnselected: {'identifier': 'combat_platform'}
+[0.001360] (-) JobUnselected: {'identifier': 'command_center'}
+[0.001485] (-) JobUnselected: {'identifier': 'common_msgs'}
+[0.001565] (-) JobUnselected: {'identifier': 'fire_platform'}
+[0.001631] (-) JobUnselected: {'identifier': 'fire_platform_3'}
+[0.001689] (-) JobUnselected: {'identifier': 'fire_tracker'}
+[0.001743] (-) JobUnselected: {'identifier': 'operator_interface'}
+[0.001794] (-) JobUnselected: {'identifier': 'positioning'}
+[0.001843] (-) JobUnselected: {'identifier': 'scan_platform'}
+[0.001901] (scanner_platform) JobQueued: {'identifier': 'scanner_platform', 'dependencies': OrderedDict()}
+[0.001958] (scanner_platform) JobStarted: {'identifier': 'scanner_platform'}
+[0.096319] (-) TimerEvent: {}
+[0.196875] (-) TimerEvent: {}
+[0.299643] (-) TimerEvent: {}
+[0.400857] (-) TimerEvent: {}
+[0.502357] (-) TimerEvent: {}
+[0.602921] (-) TimerEvent: {}
+[0.703789] (-) TimerEvent: {}
+[0.805545] (-) TimerEvent: {}
+[0.905934] (-) TimerEvent: {}
+[1.006357] (-) TimerEvent: {}
+[1.107357] (-) TimerEvent: {}
+[1.208655] (-) TimerEvent: {}
+[1.313677] (-) TimerEvent: {}
+[1.414591] (-) TimerEvent: {}
+[1.514987] (-) TimerEvent: {}
+[1.618132] (-) TimerEvent: {}
+[1.720382] (-) TimerEvent: {}
+[1.823406] (-) TimerEvent: {}
+[1.925757] (-) TimerEvent: {}
+[2.026194] (-) TimerEvent: {}
+[2.128243] (-) TimerEvent: {}
+[2.232392] (-) TimerEvent: {}
+[2.332844] (-) TimerEvent: {}
+[2.438358] (-) TimerEvent: {}
+[2.541465] (-) TimerEvent: {}
+[2.642329] (-) TimerEvent: {}
+[2.745378] (-) TimerEvent: {}
+[2.849739] (-) TimerEvent: {}
+[2.950460] (-) TimerEvent: {}
+[3.051502] (-) TimerEvent: {}
+[3.153497] (-) TimerEvent: {}
+[3.253908] (-) TimerEvent: {}
+[3.355464] (-) TimerEvent: {}
+[3.455854] (-) TimerEvent: {}
+[3.556953] (-) TimerEvent: {}
+[3.662413] (-) TimerEvent: {}
+[3.762845] (-) TimerEvent: {}
+[3.854380] (scanner_platform) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/willi/battle_ws/build/scanner_platform/build', '--no-deps', 'symlink_data'], 'cwd': '/home/willi/battle_ws/build/scanner_platform', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'willi', 'ROS_PACKAGE_PATH': '/home/willi/battle_ws/install/common_msgs/share', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/willi/battle_ws/install/common_msgs/lib:/home/willi/battle_ws/install/battle_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/willi', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/willi/battle_ws', 'TERM_PROGRAM_VERSION': '1.99.3', 'DESKTOP_SESSION': 'ubuntu-xorg', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'PS1': '\\[\x1b]633;A\x07\\](.ci-test-env) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ \\[\x1b]633;B\x07\\]', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '1690', 'BUNDLED_DEBUGPY_PATH': '/home/willi/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/willi/battle_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'willi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/willi/battle_ws/install/common_msgs/lib/x86_64-linux-gnu/pkgconfig:/home/willi/battle_ws/install/common_msgs/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'willi', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/willi/.vscode/extensions/ms-python.python-2025.6.0-linux-x64/python_files/deactivate/bash\\x3a/home/willi/battle_ws/.ci-test-env/bin\\x3a/home/willi/.vscode/extensions/ms-python.python-2025.6.0-linux-x64/python_files/deactivate/bash:/opt/ros/humble/bin:/home/willi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/willi-Lenovo-Z580:@/tmp/.ICE-unix/1664,unix/willi-Lenovo-Z580:/tmp/.ICE-unix/1664', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/364ebbb4_996b_47d9_b6be_cd13571c75ab', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/willi/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-297ebcadc624d894.txt', 'LANG': 'uk_UA.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'VIRTUAL_ENV_PROMPT': '(.ci-test-env)', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-7c7c68222e.sock', 'GNOME_TERMINAL_SERVICE': ':1.208', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/willi/battle_ws/install/scanner_platform:/home/willi/battle_ws/install/scan_platform:/home/willi/battle_ws/install/fire_tracker:/home/willi/battle_ws/install/fire_platform_3:/home/willi/battle_ws/install/fire_platform:/home/willi/battle_ws/install/command_center:/home/willi/battle_ws/install/battle_interfaces:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu-xorg', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'VIRTUAL_ENV': '/home/willi/battle_ws/.ci-test-env', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/willi/battle_ws/build/scanner_platform', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib::/opt/ros/humble/lib:/opt/ros/humble/lib', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/willi/battle_ws/build/scanner_platform/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/willi/battle_ws/install/scanner_platform/lib/python3.10/site-packages:/home/willi/battle_ws/build/scanner_platform:/home/willi/battle_ws/install/scanner_platform/lib/python3.10/site-packages:/home/willi/battle_ws/install/common_msgs/lib/python3.10/site-packages:/home/willi/battle_ws/build/scan_platform:/home/willi/battle_ws/install/scan_platform/lib/python3.10/site-packages:/home/willi/battle_ws/build/fire_tracker:/home/willi/battle_ws/install/fire_tracker/lib/python3.10/site-packages:/home/willi/battle_ws/build/fire_platform_3:/home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages:/home/willi/battle_ws/build/fire_platform:/home/willi/battle_ws/install/fire_platform/lib/python3.10/site-packages:/home/willi/battle_ws/build/command_center:/home/willi/battle_ws/install/command_center/lib/python3.10/site-packages:/home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/willi/battle_ws/install/common_msgs:/home/willi/battle_ws/install/battle_interfaces'}, 'shell': False}
+[3.866704] (-) TimerEvent: {}
+[3.968250] (-) TimerEvent: {}
+[4.068691] (-) TimerEvent: {}
+[4.169877] (-) TimerEvent: {}
+[4.271208] (-) TimerEvent: {}
+[4.373513] (-) TimerEvent: {}
+[4.474014] (-) TimerEvent: {}
+[4.576363] (-) TimerEvent: {}
+[4.677003] (-) TimerEvent: {}
+[4.779899] (-) TimerEvent: {}
+[4.881130] (-) TimerEvent: {}
+[4.983890] (-) TimerEvent: {}
+[5.084325] (-) TimerEvent: {}
+[5.159989] (scanner_platform) StdoutLine: {'line': b'running develop\n'}
+[5.184407] (-) TimerEvent: {}
+[5.284873] (-) TimerEvent: {}
+[5.387819] (-) TimerEvent: {}
+[5.489858] (-) TimerEvent: {}
+[5.591372] (-) TimerEvent: {}
+[5.692174] (-) TimerEvent: {}
+[5.793889] (-) TimerEvent: {}
+[5.895863] (-) TimerEvent: {}
+[5.965654] (scanner_platform) StdoutLine: {'line': b'running egg_info\n'}
+[5.966304] (scanner_platform) StdoutLine: {'line': b'creating scanner_platform.egg-info\n'}
+[5.995986] (-) TimerEvent: {}
+[6.012037] (scanner_platform) StdoutLine: {'line': b'writing scanner_platform.egg-info/PKG-INFO\n'}
+[6.012597] (scanner_platform) StdoutLine: {'line': b'writing dependency_links to scanner_platform.egg-info/dependency_links.txt\n'}
+[6.013024] (scanner_platform) StdoutLine: {'line': b'writing entry points to scanner_platform.egg-info/entry_points.txt\n'}
+[6.013315] (scanner_platform) StdoutLine: {'line': b'writing requirements to scanner_platform.egg-info/requires.txt\n'}
+[6.013629] (scanner_platform) StdoutLine: {'line': b'writing top-level names to scanner_platform.egg-info/top_level.txt\n'}
+[6.013863] (scanner_platform) StdoutLine: {'line': b"writing manifest file 'scanner_platform.egg-info/SOURCES.txt'\n"}
+[6.096183] (-) TimerEvent: {}
+[6.113452] (scanner_platform) StdoutLine: {'line': b"reading manifest file 'scanner_platform.egg-info/SOURCES.txt'\n"}
+[6.115183] (scanner_platform) StdoutLine: {'line': b"writing manifest file 'scanner_platform.egg-info/SOURCES.txt'\n"}
+[6.171238] (scanner_platform) StdoutLine: {'line': b'running build_ext\n'}
+[6.171725] (scanner_platform) StdoutLine: {'line': b'Creating /home/willi/battle_ws/install/scanner_platform/lib/python3.10/site-packages/scanner-platform.egg-link (link to .)\n'}
+[6.173806] (scanner_platform) StdoutLine: {'line': b'Installing scan_node script to /home/willi/battle_ws/install/scanner_platform/lib/scanner_platform\n'}
+[6.174967] (scanner_platform) StdoutLine: {'line': b'\n'}
+[6.176312] (scanner_platform) StdoutLine: {'line': b'Installed /home/willi/battle_ws/build/scanner_platform\n'}
+[6.177475] (scanner_platform) StdoutLine: {'line': b'running symlink_data\n'}
+[6.177685] (scanner_platform) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/scanner_platform/share/scanner_platform/launch\n'}
+[6.177876] (scanner_platform) StdoutLine: {'line': b'symbolically linking /home/willi/battle_ws/build/scanner_platform/scanner_platform/launch/platform_tf.launch.py -> /home/willi/battle_ws/install/scanner_platform/share/scanner_platform/launch\n'}
+[6.178080] (scanner_platform) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/scanner_platform/share/scanner_platform/urdf\n'}
+[6.178252] (scanner_platform) StdoutLine: {'line': b'symbolically linking /home/willi/battle_ws/build/scanner_platform/scanner_platform/urdf/scanner.urdf.xacro -> /home/willi/battle_ws/install/scanner_platform/share/scanner_platform/urdf\n'}
+[6.196363] (-) TimerEvent: {}
+[6.297763] (-) TimerEvent: {}
+[6.321574] (scanner_platform) CommandEnded: {'returncode': 0}
+[6.366109] (scanner_platform) JobEnded: {'identifier': 'scanner_platform', 'rc': 0}
+[6.368482] (-) EventReactorShutdown: {}

@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: scanner-platform
+Version: 0.0.0
+Summary: Сканувальна платформа з tf і LiDAR
+Maintainer: willi energ
+Maintainer-email: willi@battle.system
+License: MIT

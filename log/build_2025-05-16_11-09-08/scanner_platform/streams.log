@@ -1,0 +1,23 @@
+[3.854s] Invoking command in '/home/willi/battle_ws/build/scanner_platform': PYTHONPATH=/home/willi/battle_ws/build/scanner_platform/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/willi/battle_ws/install/scanner_platform/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.ci-test-env) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/willi/battle_ws/build/scanner_platform/build --no-deps symlink_data
+[5.158s] running develop
+[5.964s] running egg_info
+[5.965s] creating scanner_platform.egg-info
+[6.010s] writing scanner_platform.egg-info/PKG-INFO
+[6.011s] writing dependency_links to scanner_platform.egg-info/dependency_links.txt
+[6.011s] writing entry points to scanner_platform.egg-info/entry_points.txt
+[6.012s] writing requirements to scanner_platform.egg-info/requires.txt
+[6.012s] writing top-level names to scanner_platform.egg-info/top_level.txt
+[6.012s] writing manifest file 'scanner_platform.egg-info/SOURCES.txt'
+[6.112s] reading manifest file 'scanner_platform.egg-info/SOURCES.txt'
+[6.113s] writing manifest file 'scanner_platform.egg-info/SOURCES.txt'
+[6.170s] running build_ext
+[6.170s] Creating /home/willi/battle_ws/install/scanner_platform/lib/python3.10/site-packages/scanner-platform.egg-link (link to .)
+[6.172s] Installing scan_node script to /home/willi/battle_ws/install/scanner_platform/lib/scanner_platform
+[6.174s] 
+[6.175s] Installed /home/willi/battle_ws/build/scanner_platform
+[6.176s] running symlink_data
+[6.176s] creating /home/willi/battle_ws/install/scanner_platform/share/scanner_platform/launch
+[6.176s] symbolically linking /home/willi/battle_ws/build/scanner_platform/scanner_platform/launch/platform_tf.launch.py -> /home/willi/battle_ws/install/scanner_platform/share/scanner_platform/launch
+[6.176s] creating /home/willi/battle_ws/install/scanner_platform/share/scanner_platform/urdf
+[6.181s] symbolically linking /home/willi/battle_ws/build/scanner_platform/scanner_platform/urdf/scanner.urdf.xacro -> /home/willi/battle_ws/install/scanner_platform/share/scanner_platform/urdf
+[6.320s] Invoked command in '/home/willi/battle_ws/build/scanner_platform' returned '0': PYTHONPATH=/home/willi/battle_ws/build/scanner_platform/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/willi/battle_ws/install/scanner_platform/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.ci-test-env) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/willi/battle_ws/build/scanner_platform/build --no-deps symlink_data

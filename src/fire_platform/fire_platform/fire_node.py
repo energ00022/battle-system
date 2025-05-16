@@ -19,6 +19,7 @@ class FireNode(Node):
 
         self.busy = False
         self.reset_timer = None
+        self.get_logger().info("Fire node started")
         self.get_logger().info("🔥 Fire platform fp1 ready")
 
     def pointing_cb(self, request, response):

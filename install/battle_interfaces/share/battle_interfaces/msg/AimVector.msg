@@ -1,1 +1,0 @@
-/home/willi/battle_ws/src/battle_interfaces/msg/AimVector.msg

@@ -18,7 +18,7 @@ setup(
     license="Apache License 2.0",
     entry_points={
         "console_scripts": [
-            "scanner_node = scan_platform.scan_node:main",
+            "scan_node = scan_platform.scan_node:main",
         ],
     },
 )

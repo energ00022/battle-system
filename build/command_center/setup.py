@@ -1,1 +1,0 @@
-/home/willi/battle_ws/src/command_center/setup.py

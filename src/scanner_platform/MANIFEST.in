@@ -1,0 +1,2 @@
+recursive-include scanner_platform/launch *.py
+recursive-include scanner_platform/urdf *.xacro *.urdf

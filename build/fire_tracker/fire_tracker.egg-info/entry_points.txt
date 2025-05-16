@@ -1,4 +1,0 @@
-[console_scripts]
-tracker_node = fire_tracker.tracker_node:main
-tracker_node_fp3 = fire_tracker.tracker_node_fp3:main
-
