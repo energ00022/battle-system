@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="combat_platform">
+
+<material name="gray">
+  <color rgba="0.5 0.5 0.5 1.0"/>
+</material>
+
+  <!-- Основна ланка робота -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.5 0.5 0.2"/>
+      </geometry>
+      <material name="gray"/>
+    </visual>
+  </link>
+
+  <!-- Лінк lidar -->
+  <link name="lidar_link"/>
+  <joint name="lidar_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="lidar_link"/>
+    <origin xyz="0.0 0.0 0.2" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Лінк відеокамери -->
+  <link name="camera_link"/>
+  <joint name="camera_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera_link"/>
+    <origin xyz="0.1 0.0 0.3" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Лінк тепловізора -->
+  <link name="thermal_link"/>
+  <joint name="thermal_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="thermal_link"/>
+    <origin xyz="-0.1 0.0 0.3" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Лінк озброєння -->
+  <link name="weapon_link"/>
+  <joint name="weapon_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="weapon_link"/>
+    <origin xyz="0.0 0.0 0.4" rpy="0 0 0"/>
+  </joint>
+
+</robot>
