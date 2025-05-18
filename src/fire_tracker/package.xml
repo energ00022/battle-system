@@ -6,12 +6,17 @@
   <description>TODO: Package description</description>
   <maintainer email="willi@todo.todo">willi</maintainer>
   <license>TODO: License declaration</license>
+
   <buildtool_depend>ament_python</buildtool_depend>
 
+  <!-- Залежності -->
+  <build_depend>rclpy</build_depend>
+  <exec_depend>rclpy</exec_depend>
 
-  <depend>rclpy</depend>
-  <depend>battle_interfaces</depend>
+  <build_depend>battle_interfaces</build_depend>
+  <exec_depend>battle_interfaces</exec_depend>
 
+  <!-- Тести -->
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>

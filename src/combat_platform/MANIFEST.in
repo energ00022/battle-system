@@ -1,0 +1,6 @@
+# Включаємо всі launch-файли
+include combat_platform/launch/*.py
+# URDF/XACRO
+include combat_platform/urdf/*.xacro
+# YAML-конфіг позицій
+include combat_platform/config/*.yaml

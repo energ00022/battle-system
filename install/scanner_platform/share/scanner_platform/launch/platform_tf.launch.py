@@ -1,1 +1,0 @@
-/home/willi/battle_ws/build/scanner_platform/scanner_platform/launch/platform_tf.launch.py

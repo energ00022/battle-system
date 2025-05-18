@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<robot name="fire_platform_dummy" xmlns:xacro="http://ros.org/wiki/xacro">
+  <!-- тут буде твоя URDF-модель -->
+</robot>

@@ -6,12 +6,16 @@
   <maintainer email="willi@todo.todo">willi</maintainer>
   <license>Apache License 2.0</license>
 
-  <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>ament_python</buildtool_depend>
 
-  <depend>rclpy</depend>
-  <depend>battle_interfaces</depend>
+  <!-- Залежності під час збірки -->
+  <build_depend>rclpy</build_depend>
+  <build_depend>battle_interfaces</build_depend>
+  <build_depend>std_msgs</build_depend>
 
+  <!-- Залежності під час виконання -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>battle_interfaces</exec_depend>
   <exec_depend>std_msgs</exec_depend>
 
   <export>

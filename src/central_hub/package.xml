@@ -3,10 +3,22 @@
 <package format="3">
   <name>central_hub</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>Командний центр мережі бойових платформ</description>
   <maintainer email="energ00022@gmail.com">willi</maintainer>
-  <license>TODO: License declaration</license>
+  <license>MIT</license>
 
+  <!-- Інструменти для збірки -->
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <!-- Залежності під час збірки -->
+  <build_depend>rclpy</build_depend>
+  <build_depend>battle_interfaces</build_depend>
+
+  <!-- Залежності під час виконання -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>battle_interfaces</exec_depend>
+
+  <!-- Тестові залежності -->
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>

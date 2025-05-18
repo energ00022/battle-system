@@ -1,23 +1,35 @@
 import os
 from glob import glob
 
-from setuptools import setup
+from setuptools import find_packages, setup
 
 package_name = "combat_platform"
 
 setup(
     name=package_name,
     version="0.0.0",
-    packages=[package_name],
+    # Знаходимо весь Python-код у combat_platform/
+    packages=find_packages(exclude=["test"]),
+    # package_data тут не потрібен, бо всі ресурси ми вказуємо в data_files
     data_files=[
-        (os.path.join("share", package_name), ["package.xml"]),
+        # реєстрація пакета в ament_index
+        ("share/ament_index/resource_index/packages", ["resource/combat_platform"]),
+        # сам package.xml
+        (f"share/{package_name}", ["package.xml"]),
+        # всі ваші launch-файли
         (
-            os.path.join("share", package_name, "launch"),
-            glob("combat_platform/launch/*.py"),
+            f"share/{package_name}/launch",
+            glob(os.path.join(package_name, "launch", "*.py")),
         ),
+        # URDF/XACRO-моделі
         (
-            os.path.join("share", package_name, "urdf"),
-            glob("combat_platform/urdf/*.xacro"),
+            f"share/{package_name}/urdf",
+            glob(os.path.join(package_name, "urdf", "*.xacro")),
+        ),
+        # конфігурація позицій
+        (
+            f"share/{package_name}/config",
+            glob(os.path.join(package_name, "config", "*.yaml")),
         ),
     ],
     install_requires=["setuptools"],
