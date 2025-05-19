@@ -28,4 +28,4 @@ jobs:
 
     - name: Run flake8 using .flake8 config
       run: |
-        flake8 src/
+        flake8 src/ --config=.flake8

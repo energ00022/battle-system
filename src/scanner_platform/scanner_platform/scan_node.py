@@ -1,39 +1,51 @@
 #!/usr/bin/env python3
-import signal
-import sys
-import time
 
 import rclpy
 from rclpy.node import Node
 
+from battle_interfaces.msg import Target, TargetArray
+
 
 class ScanNode(Node):
-    """Сканирующий узел LiDAR-платформы."""
-
     def __init__(self):
         super().__init__("scan_node")
+        self.publisher_ = self.create_publisher(TargetArray, "/target_array", 10)
+        self.timer = self.create_timer(1.0, self.timer_callback)
         self.get_logger().info("🔍 Scan node started")
+
+    def timer_callback(self):
+        target = Target()
+        target.id = 1
+        target.x = 1.0
+        target.y = 2.0
+        target.z = 0.5
+        target.confidence = 0.85
+        target.frame_id = "map"
+
+        msg = TargetArray()
+        msg.targets = [target]
+        self.publisher_.publish(msg)
+        self.get_logger().info(f"Published {len(msg.targets)} targets")
 
 
 def main(args=None):
     rclpy.init(args=args)
     node = ScanNode()
+    exit_code = 0
 
-    # Обробник сигналу SIGINT → викликає shutdown
-    def shutdown_handler(signum, frame):
-        node.get_logger().info("👋 SIGINT received — shutting down cleanly")
+    def shutdown():
+        node.destroy_node()
         rclpy.shutdown()
 
-    signal.signal(signal.SIGINT, shutdown_handler)
-
     try:
-        while rclpy.ok():
-            rclpy.spin_once(node, timeout_sec=0.1)
-            time.sleep(0.01)
-    finally:
-        node.destroy_node()
-        return 0
+        rclpy.spin(node)
+    except Exception as e:
+        node.get_logger().error(f"Spin failed: {e}")
+        exit_code = 1
+
+    shutdown()
+    return exit_code
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    main()

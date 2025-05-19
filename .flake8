@@ -1,3 +1,4 @@
 [flake8]
 max-line-length = 100
+exclude = scan_platform_deprecated
 extend-ignore = E203, W503, CNL100, I100, Q000, I201
