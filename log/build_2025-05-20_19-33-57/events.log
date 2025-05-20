@@ -1,0 +1,16 @@
+[0.000000] (-) TimerEvent: {}
+[0.000562] (-) JobUnselected: {'identifier': 'battle_interfaces'}
+[0.000664] (-) JobUnselected: {'identifier': 'central_hub'}
+[0.000863] (-) JobUnselected: {'identifier': 'combat_platform'}
+[0.000909] (-) JobUnselected: {'identifier': 'command_center'}
+[0.000947] (-) JobUnselected: {'identifier': 'common_msgs'}
+[0.000985] (-) JobUnselected: {'identifier': 'fire_platform_3'}
+[0.001022] (-) JobUnselected: {'identifier': 'fire_tracker'}
+[0.001058] (-) JobUnselected: {'identifier': 'operator_interface'}
+[0.001231] (-) JobUnselected: {'identifier': 'positioning'}
+[0.001272] (-) JobUnselected: {'identifier': 'scan_platform'}
+[0.001307] (-) JobUnselected: {'identifier': 'scanner_platform'}
+[0.001348] (fire_platform) JobQueued: {'identifier': 'fire_platform', 'dependencies': OrderedDict([('battle_interfaces', '/home/willi/battle_ws/install/battle_interfaces')])}
+[0.001397] (fire_platform) JobStarted: {'identifier': 'fire_platform'}
+[0.010787] (fire_platform) JobEnded: {'identifier': 'fire_platform', 'rc': 1}
+[0.021577] (-) EventReactorShutdown: {}

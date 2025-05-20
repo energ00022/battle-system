@@ -1,0 +1,25 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/battle_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/battle_interfaces/msg/detail/aim_vector__type_support.c.o"
+  "CMakeFiles/battle_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/battle_interfaces/msg/detail/aim_vector__type_support.c.o.d"
+  "CMakeFiles/battle_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/battle_interfaces/msg/detail/target__type_support.c.o"
+  "CMakeFiles/battle_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/battle_interfaces/msg/detail/target__type_support.c.o.d"
+  "CMakeFiles/battle_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/battle_interfaces/msg/detail/target_array__type_support.c.o"
+  "CMakeFiles/battle_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/battle_interfaces/msg/detail/target_array__type_support.c.o.d"
+  "CMakeFiles/battle_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/battle_interfaces/srv/detail/pointing__type_support.c.o"
+  "CMakeFiles/battle_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/battle_interfaces/srv/detail/pointing__type_support.c.o.d"
+  "libbattle_interfaces__rosidl_typesupport_introspection_c.pdb"
+  "libbattle_interfaces__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/battle_interfaces/msg/detail/aim_vector__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/battle_interfaces/msg/detail/aim_vector__type_support.c"
+  "rosidl_typesupport_introspection_c/battle_interfaces/msg/detail/target__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/battle_interfaces/msg/detail/target__type_support.c"
+  "rosidl_typesupport_introspection_c/battle_interfaces/msg/detail/target_array__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/battle_interfaces/msg/detail/target_array__type_support.c"
+  "rosidl_typesupport_introspection_c/battle_interfaces/srv/detail/pointing__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/battle_interfaces/srv/detail/pointing__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/battle_interfaces__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

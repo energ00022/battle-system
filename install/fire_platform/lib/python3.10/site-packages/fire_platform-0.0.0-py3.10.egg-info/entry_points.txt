@@ -1,0 +1,3 @@
+[console_scripts]
+fire_node = fire_platform.fire_node:main
+test_tf_target = test.test_tf_target:main

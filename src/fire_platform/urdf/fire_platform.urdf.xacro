@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<robot name="fire_platform" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:arg name="prefix" default=""/>
+
+  <!-- Базова ланка -->
+  <link name="${prefix}base_link" />
+
+  <!-- Камера -->
+  <link name="${prefix}camera_link" />
+  <joint name="${prefix}camera_joint" type="fixed">
+    <parent link="${prefix}base_link"/>
+    <child link="${prefix}camera_link"/>
+    <origin xyz="0.0 0.0 1.2" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Тепловізор -->
+  <link name="${prefix}thermal_camera_link" />
+  <joint name="${prefix}thermal_joint" type="fixed">
+    <parent link="${prefix}base_link"/>
+    <child link="${prefix}thermal_camera_link"/>
+    <origin xyz="0.05 0.1 1.15" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Лазерний далекомір -->
+  <link name="${prefix}rangefinder_link" />
+  <joint name="${prefix}rangefinder_joint" type="fixed">
+    <parent link="${prefix}base_link"/>
+    <child link="${prefix}rangefinder_link"/>
+    <origin xyz="0.1 0.0 1.1" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Зброя -->
+  <link name="${prefix}weapon_link" />
+  <joint name="${prefix}weapon_joint" type="fixed">
+    <parent link="${prefix}base_link"/>
+    <child link="${prefix}weapon_link"/>
+    <origin xyz="0.0 0.0 0.9" rpy="0 0 0"/>
+  </joint>
+
+</robot>

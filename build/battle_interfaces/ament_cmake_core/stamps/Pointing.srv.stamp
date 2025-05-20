@@ -1,0 +1,4 @@
+battle_interfaces/Target target
+---
+bool accepted
+string remark

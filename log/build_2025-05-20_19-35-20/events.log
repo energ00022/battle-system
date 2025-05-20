@@ -1,0 +1,91 @@
+[0.000000] (-) TimerEvent: {}
+[0.000958] (-) JobUnselected: {'identifier': 'battle_interfaces'}
+[0.001352] (-) JobUnselected: {'identifier': 'central_hub'}
+[0.001440] (-) JobUnselected: {'identifier': 'combat_platform'}
+[0.001511] (-) JobUnselected: {'identifier': 'command_center'}
+[0.001652] (-) JobUnselected: {'identifier': 'common_msgs'}
+[0.001838] (-) JobUnselected: {'identifier': 'fire_platform_3'}
+[0.002085] (-) JobUnselected: {'identifier': 'fire_tracker'}
+[0.002167] (-) JobUnselected: {'identifier': 'operator_interface'}
+[0.002261] (-) JobUnselected: {'identifier': 'positioning'}
+[0.002328] (-) JobUnselected: {'identifier': 'scan_platform'}
+[0.002396] (-) JobUnselected: {'identifier': 'scanner_platform'}
+[0.002578] (fire_platform) JobQueued: {'identifier': 'fire_platform', 'dependencies': OrderedDict([('battle_interfaces', '/home/willi/battle_ws/install/battle_interfaces')])}
+[0.002749] (fire_platform) JobStarted: {'identifier': 'fire_platform'}
+[0.099277] (-) TimerEvent: {}
+[0.201217] (-) TimerEvent: {}
+[0.301611] (-) TimerEvent: {}
+[0.402014] (-) TimerEvent: {}
+[0.502401] (-) TimerEvent: {}
+[0.602761] (-) TimerEvent: {}
+[0.703120] (-) TimerEvent: {}
+[0.803510] (-) TimerEvent: {}
+[0.904089] (-) TimerEvent: {}
+[1.004487] (-) TimerEvent: {}
+[1.104893] (-) TimerEvent: {}
+[1.205416] (-) TimerEvent: {}
+[1.305804] (-) TimerEvent: {}
+[1.406222] (-) TimerEvent: {}
+[1.506611] (-) TimerEvent: {}
+[1.606997] (-) TimerEvent: {}
+[1.620666] (fire_platform) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/fire_platform', 'build', '--build-base', '/home/willi/battle_ws/build/fire_platform/build', 'install', '--record', '/home/willi/battle_ws/build/fire_platform/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/willi/battle_ws/src/fire_platform', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'willi', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/lib/code-server/lib/vscode/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/willi/battle_ws/install/battle_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/usr/lib/code-server/lib/vscode/bin/helpers/browser.sh', 'HOME': '/home/willi', 'TERM_PROGRAM_VERSION': '1.100.2', 'DESKTOP_SESSION': 'ubuntu-xorg', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-b3347080-1400-41a3-89ab-d05e5a5bb4a6.sock', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/lib/code-server/lib/vscode/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/lib/code-server/lib/node', 'SYSTEMD_EXEC_PID': '1709', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/willi/battle_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'willi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'willi', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/usr/lib/code-server/lib/vscode/bin/remote-cli:/home/willi/.local/bin:/opt/ros/humble/bin:/home/willi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/willi-Lenovo-Z580:@/tmp/.ICE-unix/1682,unix/willi-Lenovo-Z580:/tmp/.ICE-unix/1682', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2777af2d_7994_4c3b_b0c6_6c977753cff9', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'VSCODE_PROXY_URI': 'http://192.168.0.104:8080/proxy/{{port}}/', 'LANG': 'uk_UA.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-64910fe67f.sock', 'GNOME_TERMINAL_SERVICE': ':1.89', 'NODE_EXEC_PATH': '/usr/lib/code-server/lib/node', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/willi/battle_ws/install/battle_interfaces:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu-xorg', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/willi/battle_ws/build/fire_platform', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib::/opt/ros/humble/lib:/opt/ros/humble/lib:/opt/ros/humble/lib', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/willi/battle_ws/build/fire_platform/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/willi/battle_ws/install/fire_platform/lib/python3.10/site-packages:/home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages:/home/willi/battle_ws/install/operator_interface/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/willi/battle_ws/install/battle_interfaces'}, 'shell': False}
+[1.707110] (-) TimerEvent: {}
+[1.807535] (-) TimerEvent: {}
+[1.907951] (-) TimerEvent: {}
+[2.008379] (-) TimerEvent: {}
+[2.108781] (-) TimerEvent: {}
+[2.209186] (-) TimerEvent: {}
+[2.235610] (fire_platform) StdoutLine: {'line': b'running egg_info\n'}
+[2.237177] (fire_platform) StdoutLine: {'line': b'creating ../../build/fire_platform/fire_platform.egg-info\n'}
+[2.261574] (fire_platform) StdoutLine: {'line': b'writing ../../build/fire_platform/fire_platform.egg-info/PKG-INFO\n'}
+[2.261978] (fire_platform) StdoutLine: {'line': b'writing dependency_links to ../../build/fire_platform/fire_platform.egg-info/dependency_links.txt\n'}
+[2.262372] (fire_platform) StdoutLine: {'line': b'writing entry points to ../../build/fire_platform/fire_platform.egg-info/entry_points.txt\n'}
+[2.262670] (fire_platform) StdoutLine: {'line': b'writing requirements to ../../build/fire_platform/fire_platform.egg-info/requires.txt\n'}
+[2.262913] (fire_platform) StdoutLine: {'line': b'writing top-level names to ../../build/fire_platform/fire_platform.egg-info/top_level.txt\n'}
+[2.263140] (fire_platform) StdoutLine: {'line': b"writing manifest file '../../build/fire_platform/fire_platform.egg-info/SOURCES.txt'\n"}
+[2.309286] (-) TimerEvent: {}
+[2.311834] (fire_platform) StdoutLine: {'line': b"reading manifest file '../../build/fire_platform/fire_platform.egg-info/SOURCES.txt'\n"}
+[2.312915] (fire_platform) StdoutLine: {'line': b"writing manifest file '../../build/fire_platform/fire_platform.egg-info/SOURCES.txt'\n"}
+[2.313256] (fire_platform) StdoutLine: {'line': b'running build\n'}
+[2.313462] (fire_platform) StdoutLine: {'line': b'running build_py\n'}
+[2.313728] (fire_platform) StdoutLine: {'line': b'creating /home/willi/battle_ws/build/fire_platform/build\n'}
+[2.313910] (fire_platform) StdoutLine: {'line': b'creating /home/willi/battle_ws/build/fire_platform/build/lib\n'}
+[2.314088] (fire_platform) StdoutLine: {'line': b'creating /home/willi/battle_ws/build/fire_platform/build/lib/fire_platform\n'}
+[2.314381] (fire_platform) StdoutLine: {'line': b'copying fire_platform/__init__.py -> /home/willi/battle_ws/build/fire_platform/build/lib/fire_platform\n'}
+[2.314560] (fire_platform) StdoutLine: {'line': b'copying fire_platform/fire_node.py -> /home/willi/battle_ws/build/fire_platform/build/lib/fire_platform\n'}
+[2.314736] (fire_platform) StdoutLine: {'line': b'creating /home/willi/battle_ws/build/fire_platform/build/lib/test\n'}
+[2.314910] (fire_platform) StdoutLine: {'line': b'copying test/__init__.py -> /home/willi/battle_ws/build/fire_platform/build/lib/test\n'}
+[2.315138] (fire_platform) StdoutLine: {'line': b'copying test/test_tf_target.py -> /home/willi/battle_ws/build/fire_platform/build/lib/test\n'}
+[2.315371] (fire_platform) StdoutLine: {'line': b'running install\n'}
+[2.323260] (fire_platform) StdoutLine: {'line': b'running install_lib\n'}
+[2.347179] (fire_platform) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/fire_platform/lib/python3.10/site-packages/fire_platform\n'}
+[2.347453] (fire_platform) StdoutLine: {'line': b'copying /home/willi/battle_ws/build/fire_platform/build/lib/fire_platform/__init__.py -> /home/willi/battle_ws/install/fire_platform/lib/python3.10/site-packages/fire_platform\n'}
+[2.347675] (fire_platform) StdoutLine: {'line': b'copying /home/willi/battle_ws/build/fire_platform/build/lib/fire_platform/fire_node.py -> /home/willi/battle_ws/install/fire_platform/lib/python3.10/site-packages/fire_platform\n'}
+[2.347858] (fire_platform) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/fire_platform/lib/python3.10/site-packages/test\n'}
+[2.348059] (fire_platform) StdoutLine: {'line': b'copying /home/willi/battle_ws/build/fire_platform/build/lib/test/__init__.py -> /home/willi/battle_ws/install/fire_platform/lib/python3.10/site-packages/test\n'}
+[2.348256] (fire_platform) StdoutLine: {'line': b'copying /home/willi/battle_ws/build/fire_platform/build/lib/test/test_tf_target.py -> /home/willi/battle_ws/install/fire_platform/lib/python3.10/site-packages/test\n'}
+[2.349067] (fire_platform) StdoutLine: {'line': b'byte-compiling /home/willi/battle_ws/install/fire_platform/lib/python3.10/site-packages/fire_platform/__init__.py to __init__.cpython-310.pyc\n'}
+[2.349463] (fire_platform) StdoutLine: {'line': b'byte-compiling /home/willi/battle_ws/install/fire_platform/lib/python3.10/site-packages/fire_platform/fire_node.py to fire_node.cpython-310.pyc\n'}
+[2.350596] (fire_platform) StdoutLine: {'line': b'byte-compiling /home/willi/battle_ws/install/fire_platform/lib/python3.10/site-packages/test/__init__.py to __init__.cpython-310.pyc\n'}
+[2.350840] (fire_platform) StdoutLine: {'line': b'byte-compiling /home/willi/battle_ws/install/fire_platform/lib/python3.10/site-packages/test/test_tf_target.py to test_tf_target.cpython-310.pyc\n'}
+[2.351803] (fire_platform) StdoutLine: {'line': b'running install_data\n'}
+[2.352124] (fire_platform) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/fire_platform/share/ament_index\n'}
+[2.352306] (fire_platform) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/fire_platform/share/ament_index/resource_index\n'}
+[2.352497] (fire_platform) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/fire_platform/share/ament_index/resource_index/packages\n'}
+[2.352731] (fire_platform) StdoutLine: {'line': b'copying resource/fire_platform -> /home/willi/battle_ws/install/fire_platform/share/ament_index/resource_index/packages\n'}
+[2.352897] (fire_platform) StdoutLine: {'line': b'copying package.xml -> /home/willi/battle_ws/install/fire_platform/share/fire_platform\n'}
+[2.353307] (fire_platform) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/fire_platform/share/fire_platform/launch\n'}
+[2.353523] (fire_platform) StdoutLine: {'line': b'copying launch/platform_tf.launch.py -> /home/willi/battle_ws/install/fire_platform/share/fire_platform/launch\n'}
+[2.354113] (fire_platform) StdoutLine: {'line': b'creating /home/willi/battle_ws/install/fire_platform/share/fire_platform/urdf\n'}
+[2.354384] (fire_platform) StdoutLine: {'line': b'copying urdf/fire_platform.urdf.xacro -> /home/willi/battle_ws/install/fire_platform/share/fire_platform/urdf\n'}
+[2.354546] (fire_platform) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.392964] (fire_platform) StdoutLine: {'line': b'Copying ../../build/fire_platform/fire_platform.egg-info to /home/willi/battle_ws/install/fire_platform/lib/python3.10/site-packages/fire_platform-0.0.0-py3.10.egg-info\n'}
+[2.394293] (fire_platform) StdoutLine: {'line': b'running install_scripts\n'}
+[2.409389] (-) TimerEvent: {}
+[2.490016] (fire_platform) StdoutLine: {'line': b'Installing fire_node script to /home/willi/battle_ws/install/fire_platform/lib/fire_platform\n'}
+[2.490302] (fire_platform) StdoutLine: {'line': b'Installing test_tf_target script to /home/willi/battle_ws/install/fire_platform/lib/fire_platform\n'}
+[2.490984] (fire_platform) StdoutLine: {'line': b"writing list of installed files to '/home/willi/battle_ws/build/fire_platform/install.log'\n"}
+[2.509531] (-) TimerEvent: {}
+[2.561397] (fire_platform) CommandEnded: {'returncode': 0}
+[2.577100] (fire_platform) JobEnded: {'identifier': 'fire_platform', 'rc': 0}
+[2.579055] (-) EventReactorShutdown: {}

@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-a1b3724520e22954eed1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "battle_interfaces__py",
+					"jsonFile" : "directory-battle_interfaces__py-38d510e0927bddb6de81.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/willi/battle_ws/build/battle_interfaces/battle_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "battle_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_battle_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_battle_interfaces_egg-548d14d43c67441ce20e.json",
+					"name" : "ament_cmake_python_build_battle_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_battle_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_battle_interfaces-3a118c60ff557ad02943.json",
+					"name" : "ament_cmake_python_copy_battle_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "battle_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-battle_interfaces-ee2ef0e3409e82a66c45.json",
+					"name" : "battle_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "battle_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-battle_interfaces__cpp-2a2fd24aee4ea1a44697.json",
+					"name" : "battle_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "battle_interfaces__py::@f3607a8f0705dc6662dc",
+					"jsonFile" : "target-battle_interfaces__py-1e5f421639515a2255d9.json",
+					"name" : "battle_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "battle_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-battle_interfaces__rosidl_generator_c-1cf0c11fba4b2f1b43a2.json",
+					"name" : "battle_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "battle_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-battle_interfaces__rosidl_generator_py-3e248a6f4c4ee5d5a239.json",
+					"name" : "battle_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "battle_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-battle_interfaces__rosidl_typesupport_c-7aeecb094c888e9880f1.json",
+					"name" : "battle_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "battle_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-battle_interfaces__rosidl_typesupport_c__pyext-f5a7b08a741a586f4730.json",
+					"name" : "battle_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "battle_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-battle_interfaces__rosidl_typesupport_cpp-d7cfbfccf5f6137100d4.json",
+					"name" : "battle_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "battle_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-battle_interfaces__rosidl_typesupport_fastrtps_c-392c016b5d4a7c92ee36.json",
+					"name" : "battle_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "battle_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-battle_interfaces__rosidl_typesupport_fastrtps_c__pyext-82ee3ef1e75da453cfab.json",
+					"name" : "battle_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "battle_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-battle_interfaces__rosidl_typesupport_fastrtps_cpp-b847f95937802a24d1b4.json",
+					"name" : "battle_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "battle_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-battle_interfaces__rosidl_typesupport_introspection_c-c38acaaa1f5367409304.json",
+					"name" : "battle_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "battle_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-battle_interfaces__rosidl_typesupport_introspection_c__pyext-867ddeb962d03d050d67.json",
+					"name" : "battle_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "battle_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-battle_interfaces__rosidl_typesupport_introspection_cpp-fb46bffedc7f8ac8c0a1.json",
+					"name" : "battle_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "battle_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-battle_interfaces_uninstall-26fc0d5eed7779624465.json",
+					"name" : "battle_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-28a8ec9f8b0a2e428ef5.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/willi/battle_ws/build/battle_interfaces",
+		"source" : "/home/willi/battle_ws/src/battle_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
