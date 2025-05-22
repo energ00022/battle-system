@@ -1,6 +1,5 @@
 import rclpy
-
-from fire_platform_3.fire_node_3 import \
+from fire_platform_3_3.fire_node_3 import \
     FireNode3  # або FireNode, якщо така назва в коді
 
 

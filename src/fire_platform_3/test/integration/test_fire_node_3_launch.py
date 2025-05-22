@@ -12,7 +12,7 @@ def generate_test_description():
     return launch.LaunchDescription(
         [
             launch_ros.actions.Node(
-                package="fire_platform_3",
+                package="fire_platform_3_3",
                 executable="fire_node_3",
                 name="fire_node_3_test",
                 output="screen",

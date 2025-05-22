@@ -9,8 +9,8 @@ setup(
     data_files=[
         ("share/ament_index/resource_index/packages", ["resource/" + package_name]),
         ("share/" + package_name, ["package.xml"]),
-        ("share/" + package_name + "/launch", ["launch/fire_platform3.launch.py"]),
-        ("share/" + package_name + "/urdf", ["urdf/dummy.urdf.xacro"]),
+        ("share/" + package_name + "/launch", ["launch/platform_tf.launch.py"]),
+        ("share/" + package_name + "/urdf", ["urdf/fire_platform.urdf.xacro"]),
     ],
     install_requires=["setuptools"],
     zip_safe=True,
@@ -21,6 +21,7 @@ setup(
     entry_points={
         "console_scripts": [
             "fire_node_3 = fire_platform_3.fire_node_3:main",
+            "test_tf_target = fire_platform_3.test_tf_target:main",
         ],
     },
 )

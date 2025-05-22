@@ -1,4 +1,0 @@
-digraph G {
-  "map" -> "scanner/odom";
-  "scanner/odom" -> "base_link";
-}
