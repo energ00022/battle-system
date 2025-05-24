@@ -1,1 +1,1 @@
-battle_interfaces:geometry_msgs:rclpy:std_msgs
+battle_interfaces:fire_platform_description:geometry_msgs:rclpy:std_msgs:tf2_geometry_msgs:tf2_ros

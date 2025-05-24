@@ -1,0 +1,43 @@
+[2.143s] Invoking command in '/home/willi/battle_ws/src/fire_platform_3': AMENT_PREFIX_PATH=/home/willi/battle_ws/install/fire_platform_description:/home/willi/battle_ws/install/fire_platform_3:/home/willi/battle_ws/install/fire_platform:/home/willi/battle_ws/install/battle_interfaces:/opt/ros/humble PYTHONPATH=/home/willi/battle_ws/build/fire_platform_3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages:/home/willi/battle_ws/install/fire_platform_description/lib/python3.10/site-packages:/home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages:/home/willi/battle_ws/install/fire_platform/lib/python3.10/site-packages:/home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages:/home/willi/battle_ws/install/operator_interface/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/fire_platform_3 build --build-base /home/willi/battle_ws/build/fire_platform_3/build install --record /home/willi/battle_ws/build/fire_platform_3/install.log --single-version-externally-managed install_data
+[2.812s] running egg_info
+[2.813s] creating ../../build/fire_platform_3/fire_platform_3.egg-info
+[2.837s] writing ../../build/fire_platform_3/fire_platform_3.egg-info/PKG-INFO
+[2.838s] writing dependency_links to ../../build/fire_platform_3/fire_platform_3.egg-info/dependency_links.txt
+[2.838s] writing entry points to ../../build/fire_platform_3/fire_platform_3.egg-info/entry_points.txt
+[2.839s] writing requirements to ../../build/fire_platform_3/fire_platform_3.egg-info/requires.txt
+[2.839s] writing top-level names to ../../build/fire_platform_3/fire_platform_3.egg-info/top_level.txt
+[2.839s] writing manifest file '../../build/fire_platform_3/fire_platform_3.egg-info/SOURCES.txt'
+[2.891s] reading manifest file '../../build/fire_platform_3/fire_platform_3.egg-info/SOURCES.txt'
+[2.892s] writing manifest file '../../build/fire_platform_3/fire_platform_3.egg-info/SOURCES.txt'
+[2.893s] running build
+[2.893s] running build_py
+[2.894s] creating /home/willi/battle_ws/build/fire_platform_3/build
+[2.894s] creating /home/willi/battle_ws/build/fire_platform_3/build/lib
+[2.894s] creating /home/willi/battle_ws/build/fire_platform_3/build/lib/fire_platform_3
+[2.894s] copying fire_platform_3/fire_node_3.py -> /home/willi/battle_ws/build/fire_platform_3/build/lib/fire_platform_3
+[2.894s] copying fire_platform_3/__init__.py -> /home/willi/battle_ws/build/fire_platform_3/build/lib/fire_platform_3
+[2.895s] copying fire_platform_3/test_tf_target.py -> /home/willi/battle_ws/build/fire_platform_3/build/lib/fire_platform_3
+[2.895s] running install
+[2.901s] running install_lib
+[2.927s] creating /home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages/fire_platform_3
+[2.928s] copying /home/willi/battle_ws/build/fire_platform_3/build/lib/fire_platform_3/fire_node_3.py -> /home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages/fire_platform_3
+[2.928s] copying /home/willi/battle_ws/build/fire_platform_3/build/lib/fire_platform_3/__init__.py -> /home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages/fire_platform_3
+[2.928s] copying /home/willi/battle_ws/build/fire_platform_3/build/lib/fire_platform_3/test_tf_target.py -> /home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages/fire_platform_3
+[2.929s] byte-compiling /home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages/fire_platform_3/fire_node_3.py to fire_node_3.cpython-310.pyc
+[2.930s] byte-compiling /home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages/fire_platform_3/__init__.py to __init__.cpython-310.pyc
+[2.930s] byte-compiling /home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages/fire_platform_3/test_tf_target.py to test_tf_target.cpython-310.pyc
+[2.931s] running install_data
+[2.931s] creating /home/willi/battle_ws/install/fire_platform_3/share/ament_index
+[2.932s] creating /home/willi/battle_ws/install/fire_platform_3/share/ament_index/resource_index
+[2.932s] creating /home/willi/battle_ws/install/fire_platform_3/share/ament_index/resource_index/packages
+[2.932s] copying resource/fire_platform_3 -> /home/willi/battle_ws/install/fire_platform_3/share/ament_index/resource_index/packages
+[2.932s] copying package.xml -> /home/willi/battle_ws/install/fire_platform_3/share/fire_platform_3
+[2.933s] creating /home/willi/battle_ws/install/fire_platform_3/share/fire_platform_3/launch
+[2.933s] copying launch/platform_tf.launch.py -> /home/willi/battle_ws/install/fire_platform_3/share/fire_platform_3/launch
+[2.933s] running install_egg_info
+[2.974s] Copying ../../build/fire_platform_3/fire_platform_3.egg-info to /home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages/fire_platform_3-0.0.1-py3.10.egg-info
+[2.975s] running install_scripts
+[3.080s] Installing fire_node_3 script to /home/willi/battle_ws/install/fire_platform_3/lib/fire_platform_3
+[3.080s] Installing test_tf_target script to /home/willi/battle_ws/install/fire_platform_3/lib/fire_platform_3
+[3.081s] writing list of installed files to '/home/willi/battle_ws/build/fire_platform_3/install.log'
+[3.158s] Invoked command in '/home/willi/battle_ws/src/fire_platform_3' returned '0': AMENT_PREFIX_PATH=/home/willi/battle_ws/install/fire_platform_description:/home/willi/battle_ws/install/fire_platform_3:/home/willi/battle_ws/install/fire_platform:/home/willi/battle_ws/install/battle_interfaces:/opt/ros/humble PYTHONPATH=/home/willi/battle_ws/build/fire_platform_3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages:/home/willi/battle_ws/install/fire_platform_description/lib/python3.10/site-packages:/home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages:/home/willi/battle_ws/install/fire_platform/lib/python3.10/site-packages:/home/willi/battle_ws/install/battle_interfaces/local/lib/python3.10/dist-packages:/home/willi/battle_ws/install/operator_interface/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/fire_platform_3 build --build-base /home/willi/battle_ws/build/fire_platform_3/build install --record /home/willi/battle_ws/build/fire_platform_3/install.log --single-version-externally-managed install_data

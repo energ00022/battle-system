@@ -1,0 +1,14 @@
+package.sh
+package.xml
+setup.py
+../../build/fire_platform_description/fire_platform_description.egg-info/PKG-INFO
+../../build/fire_platform_description/fire_platform_description.egg-info/SOURCES.txt
+../../build/fire_platform_description/fire_platform_description.egg-info/dependency_links.txt
+../../build/fire_platform_description/fire_platform_description.egg-info/requires.txt
+../../build/fire_platform_description/fire_platform_description.egg-info/top_level.txt
+../../build/fire_platform_description/fire_platform_description.egg-info/zip-safe
+resource/fire_platform_description
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+urdf/fire_platform.urdf.xacro

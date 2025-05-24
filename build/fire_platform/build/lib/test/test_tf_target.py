@@ -1,8 +1,8 @@
 import rclpy
-from rclpy.node import Node
 from geometry_msgs.msg import PointStamped
-from tf2_ros import Buffer, TransformListener
+from rclpy.node import Node
 from tf2_geometry_msgs.tf2_geometry_msgs import do_transform_point
+from tf2_ros import Buffer, TransformListener
 
 
 class TargetTransformer(Node):
@@ -28,8 +28,12 @@ class TargetTransformer(Node):
             )
             local_target = do_transform_point(target, transform)
             self.get_logger().info(
-                f"🎯 Target in fp1/base_link: x={local_target.point.x:.2f}, y={local_target.point.y:.2f}, z={local_target.point.z:.2f}"
+                "🎯 Target in fp1/base_link: "
+                f"x={local_target.point.x:.2f}, "
+                f"y={local_target.point.y:.2f}, "
+                f"z={local_target.point.z:.2f}"
             )
+
         except Exception as e:
             self.get_logger().warn(f"⚠ Не вдалося трансформувати: {e}")
 

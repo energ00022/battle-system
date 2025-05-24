@@ -1,4 +1,4 @@
-# ===== platform_tf.launch.py =====
+#!/usr/bin/env python3
 
 from os.path import join
 
@@ -10,41 +10,37 @@ from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description():
-    robot_namespace = LaunchConfiguration("robot_namespace")
+    # 1) LaunchConfiguration — тільки ім'я змінної
+    ns = LaunchConfiguration("robot_namespace")
     urdf_file = LaunchConfiguration("urdf_file")
 
     return LaunchDescription(
         [
+            # 2) Оголошуємо змінні із default_value
             DeclareLaunchArgument(
                 "robot_namespace",
                 default_value="fp1",
-                description="Ім’я платформи (namespace)",
+                description="Namespace for this Fire Platform",
             ),
             DeclareLaunchArgument(
                 "urdf_file",
                 default_value=join(
-                    FindPackageShare("fire_platform").find("fire_platform"),
-                    "urdf/fire_platform.urdf.xacro",
+                    FindPackageShare("fire_platform_description").find(
+                        "fire_platform_description"
+                    ),
+                    "urdf",
+                    "fire_platform.urdf.xacro",
                 ),
-                description="Шлях до Xacro URDF-файлу",
+                description="Path to Fire Platform Xacro URDF",
             ),
-            # Static tf map -> odom
+            # 3) Static TF: map → ns/odom
             Node(
                 package="tf2_ros",
                 executable="static_transform_publisher",
                 name="map_to_odom_tf",
-                arguments=[
-                    "0",
-                    "0",
-                    "0",
-                    "0",
-                    "0",
-                    "0",
-                    "map",
-                    [robot_namespace, "/odom"],
-                ],
+                arguments=["0", "0", "0", "0", "0", "0", "map", [ns, "/odom"]],
             ),
-            # Static tf odom -> base_link
+            # 4) Static TF: ns/odom → ns/base_link
             Node(
                 package="tf2_ros",
                 executable="static_transform_publisher",
@@ -56,28 +52,24 @@ def generate_launch_description():
                     "0",
                     "0",
                     "0",
-                    [robot_namespace, "/odom"],
-                    [robot_namespace, "/base_link"],
+                    [ns, "/odom"],
+                    [ns, "/base_link"],
                 ],
             ),
-            # Robot state publisher with prefix
+            # 5) robot_state_publisher з frame_prefix
             Node(
                 package="robot_state_publisher",
                 executable="robot_state_publisher",
-                name="robot_state_publisher",
-                namespace=robot_namespace,
-                parameters=[
-                    {"use_sim_time": False, "frame_prefix": [robot_namespace, "/"]}
-                ],
+                namespace=ns,
+                parameters=[{"use_sim_time": False, "frame_prefix": [ns, "/"]}],
                 arguments=[urdf_file],
                 output="screen",
             ),
-            # Fire node (у своєму namespace)
+            # 6) ваша основна нода
             Node(
                 package="fire_platform",
                 executable="fire_node",
-                name="fire_node",
-                namespace=robot_namespace,
+                namespace=ns,
                 output="screen",
             ),
         ]

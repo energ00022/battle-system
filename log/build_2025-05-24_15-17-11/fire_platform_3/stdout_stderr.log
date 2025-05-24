@@ -1,0 +1,41 @@
+running egg_info
+creating ../../build/fire_platform_3/fire_platform_3.egg-info
+writing ../../build/fire_platform_3/fire_platform_3.egg-info/PKG-INFO
+writing dependency_links to ../../build/fire_platform_3/fire_platform_3.egg-info/dependency_links.txt
+writing entry points to ../../build/fire_platform_3/fire_platform_3.egg-info/entry_points.txt
+writing requirements to ../../build/fire_platform_3/fire_platform_3.egg-info/requires.txt
+writing top-level names to ../../build/fire_platform_3/fire_platform_3.egg-info/top_level.txt
+writing manifest file '../../build/fire_platform_3/fire_platform_3.egg-info/SOURCES.txt'
+reading manifest file '../../build/fire_platform_3/fire_platform_3.egg-info/SOURCES.txt'
+writing manifest file '../../build/fire_platform_3/fire_platform_3.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/willi/battle_ws/build/fire_platform_3/build
+creating /home/willi/battle_ws/build/fire_platform_3/build/lib
+creating /home/willi/battle_ws/build/fire_platform_3/build/lib/fire_platform_3
+copying fire_platform_3/fire_node_3.py -> /home/willi/battle_ws/build/fire_platform_3/build/lib/fire_platform_3
+copying fire_platform_3/__init__.py -> /home/willi/battle_ws/build/fire_platform_3/build/lib/fire_platform_3
+copying fire_platform_3/test_tf_target.py -> /home/willi/battle_ws/build/fire_platform_3/build/lib/fire_platform_3
+running install
+running install_lib
+creating /home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages/fire_platform_3
+copying /home/willi/battle_ws/build/fire_platform_3/build/lib/fire_platform_3/fire_node_3.py -> /home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages/fire_platform_3
+copying /home/willi/battle_ws/build/fire_platform_3/build/lib/fire_platform_3/__init__.py -> /home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages/fire_platform_3
+copying /home/willi/battle_ws/build/fire_platform_3/build/lib/fire_platform_3/test_tf_target.py -> /home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages/fire_platform_3
+byte-compiling /home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages/fire_platform_3/fire_node_3.py to fire_node_3.cpython-310.pyc
+byte-compiling /home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages/fire_platform_3/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages/fire_platform_3/test_tf_target.py to test_tf_target.cpython-310.pyc
+running install_data
+creating /home/willi/battle_ws/install/fire_platform_3/share/ament_index
+creating /home/willi/battle_ws/install/fire_platform_3/share/ament_index/resource_index
+creating /home/willi/battle_ws/install/fire_platform_3/share/ament_index/resource_index/packages
+copying resource/fire_platform_3 -> /home/willi/battle_ws/install/fire_platform_3/share/ament_index/resource_index/packages
+copying package.xml -> /home/willi/battle_ws/install/fire_platform_3/share/fire_platform_3
+creating /home/willi/battle_ws/install/fire_platform_3/share/fire_platform_3/launch
+copying launch/platform_tf.launch.py -> /home/willi/battle_ws/install/fire_platform_3/share/fire_platform_3/launch
+running install_egg_info
+Copying ../../build/fire_platform_3/fire_platform_3.egg-info to /home/willi/battle_ws/install/fire_platform_3/lib/python3.10/site-packages/fire_platform_3-0.0.1-py3.10.egg-info
+running install_scripts
+Installing fire_node_3 script to /home/willi/battle_ws/install/fire_platform_3/lib/fire_platform_3
+Installing test_tf_target script to /home/willi/battle_ws/install/fire_platform_3/lib/fire_platform_3
+writing list of installed files to '/home/willi/battle_ws/build/fire_platform_3/install.log'

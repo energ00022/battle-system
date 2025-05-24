@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: fire-platform-description
+Version: 0.0.1
+Summary: URDF/Xacro description for Fire Platform
+Maintainer: willi
+Maintainer-email: willi@example.com
+License: Apache License 2.0

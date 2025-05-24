@@ -14,4 +14,3 @@ launch/platform_tf.launch.py
 resource/fire_platform
 test/__init__.py
 test/test_tf_target.py
-urdf/fire_platform.urdf.xacro
