@@ -9,7 +9,7 @@ setup(
     data_files=[
         ("share/ament_index/resource_index/packages", ["resource/" + package_name]),
         ("share/" + package_name, ["package.xml"]),
-        ("share/" + package_name + "/launch", ["launch/platform_tf.launch.py"]),
+        ("share/" + package_name + "/launch", ["launch/fire_platform_launch.py"]),
         # ("share/" + package_name + "/urdf", ["urdf/fire_platform.urdf.xacro"]),
     ],
     install_requires=["setuptools"],
@@ -20,8 +20,9 @@ setup(
     license="Apache License 2.0",
     entry_points={
         "console_scripts": [
-            "fire_node_3 = fire_platform_3.fire_node_3:main",
-            "test_tf_target = fire_platform_3.test_tf_target:main",
+            "fire_node = fire_platform_3.fire_node:main",
+            "aiming_node = fire_platform_3.aiming_node:main",
+            "test_tf_target = test.test_tf_target:main",
         ],
     },
 )

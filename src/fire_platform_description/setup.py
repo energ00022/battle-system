@@ -7,13 +7,15 @@ setup(
     version="0.0.1",
     packages=[],
     data_files=[
-        # щоб пакет став видимим через ament_index
         ("share/ament_index/resource_index/packages", ["resource/" + package_name]),
-        # встановлюємо package.xml
         (f"share/{package_name}", ["package.xml", "package.sh"]),
-        # встановлюємо всi launch-файли (якщо вони будуть)
-        # ('share/'+package_name+'/launch', ['launch/...']),
-        # встановлюємо urdf
+        (
+            "share/" + package_name + "/launch",
+            [
+                "launch/fire_platform_tf.launch.py",
+                "launch/fire_platform_state.launch.py",
+            ],
+        ),
         (f"share/{package_name}/urdf", ["urdf/fire_platform.urdf.xacro"]),
     ],
     install_requires=["setuptools"],

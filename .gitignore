@@ -4,3 +4,9 @@ __pycache__/
 
 # Virtual environments
 .ci-test-env/
+
+build/
+install/
+log/
+*.pyc
+__pycache__/
