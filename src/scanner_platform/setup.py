@@ -1,32 +1,33 @@
-from setuptools import setup
+import os
+from glob import glob
+
+from setuptools import find_packages, setup
 
 package_name = "scanner_platform"
 
 setup(
     name=package_name,
-    version="0.0.0",
-    packages=["scanner_platform"],
-    include_package_data=True,
+    version="0.0.1",
+    packages=find_packages(include=[package_name, f"{package_name}.*"]),
     data_files=[
+        ("share/ament_index/resource_index/packages", ["resource/" + package_name]),
+        ("share/" + package_name, ["package.xml"]),
         (
-            "share/" + package_name + "/launch",
-            ["scanner_platform/launch/platform_tf.launch.py"],
+            os.path.join("share", package_name, "launch"),
+            glob("scanner_platform/launch/*.py"),
         ),
-        (
-            "share/" + package_name + "/urdf",
-            ["scanner_platform/urdf/scanner.urdf.xacro"],
-        ),
+        (os.path.join("share", package_name, "urdf"), glob("scanner_platform/urdf/*")),
     ],
-    install_requires=["setuptools"],
+    install_requires=["setuptools", "numpy", "pcl_py", "sensor_msgs_py"],
     zip_safe=True,
-    maintainer="willi energ",
-    maintainer_email="willi@battle.system",
-    description="Сканувальна платформа з tf і LiDAR",
-    license="MIT",
+    maintainer="Your Name",
+    maintainer_email="you@example.com",
+    description="Scanner platform package for battle ROS 2 system",
+    license="Apache-2.0",
     tests_require=["pytest"],
     entry_points={
         "console_scripts": [
-            "scan_node = scanner_platform.scan_node:main",
+            "scanner_node = scanner_platform.scan_node:main",
         ],
     },
 )
