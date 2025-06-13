@@ -20,10 +20,10 @@ setup(
     ],
     install_requires=["setuptools", "numpy", "pcl_py", "sensor_msgs_py"],
     zip_safe=True,
-    maintainer="Your Name",
-    maintainer_email="you@example.com",
+    maintainer="willi",
+    maintainer_email="energ00022@gmail.com",
     description="Scanner platform package for battle ROS 2 system",
-    license="Apache-2.0",
+    license="MIT",
     tests_require=["pytest"],
     entry_points={
         "console_scripts": [
